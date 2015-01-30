@@ -1,0 +1,50 @@
+<overrides>
+    <properties>
+        <db.user>redacted</db.user> <!-- your database user -->
+        <db.pass>redacted</db.pass> <!-- your database password -->
+        <db.dbname>jdbc:postgresql://host:5432/geonetwork</db.dbname> <!-- your database host, port and name -->
+    </properties>
+    <file name=".*/WEB-INF/config.xml">
+        <addXML xpath="appHandler"><param name="geonetwork.dir" value="/geonetwork/data_live" /></addXML> <!-- your external data directory -->
+            <replaceXML xpath="resources">
+                <resource enabled="true">
+                    <name>main-db</name>
+                    <provider>jeeves.resources.dbms.ApacheDBCPool</provider>
+                    <config>
+                        <user>${db.user}</user>
+                        <password>${db.pass}</password>
+                        <driver>org.postgis.DriverWrapper</driver>
+                        <url>${db.dbname}</url>
+                        <poolSize>10</poolSize>
+                        <validationQuery>SELECT 1</validationQuery>
+                    </config>
+                </resource>
+            </replaceXML>
+    </file>
+    <file name=".*/WEB-INF/config-gui.xml">
+	<replaceXML xpath="languages">
+		<eng />
+	</replaceXML>
+	<replaceXML xpath="proj">
+		<crs code="EPSG:4326" default="1" edit="1"/><!-- WGS84 is mandatory because ISO store it by default in LatLong-->
+		<crs code="EPSG:27700" edit="1" def="+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs "/>
+	</replaceXML>
+        <replaceAtt xpath="mapSearch" attName="options" value="{projection: 'EPSG:27700', maxExtent: new OpenLayers.Bounds(0,0,700000,1300000), units: 'm', restrictedExtent: new OpenLayers.Bounds(0,0,700000,1300000), resolutions: [1600,800,400,200,100,50,25,10,5,2.5,1,0.5,0.25]}"/>
+        <replaceXML xpath="mapSearch/layers">
+		<layer server="http://t0.ads.astuntechnology.com/astuntechnology/osopen/service" tocName="OS Open"  params="{layers: 'osopen', format: 'image/png'}"  options="{isBaseLayer: true}" />
+	</replaceXML> 
+        <replaceAtt xpath="mapViewer" attName="options" value="{projection: 'EPSG:27700', maxExtent: new OpenLayers.Bounds(-3276800,-3276800,3276800,3276800), units: 'm', restrictedExtent: new OpenLayers.Bounds(0,0,700000,1300000), resolutions: [3200,1600,800,400,200,100,50,25,10,5,2.5,1,0.5]}"/>
+        <replaceXML xpath="mapViewer">
+            <layers>
+                <layer server="http://t0.ads.astuntechnology.com/astuntechnology/osopen/service" tocName="OS Open"  params="{layers: 'osopen', format: 'image/png'}"  options="{isBaseLayer: true}" />
+           </layers>
+           <scales values="[]" />    
+           <proj>
+               <crs code="EPSG:27700" default="1" name="BNG" />
+           </proj>
+           <servers>
+               <server name="ADS" url="http://t0.ads.astuntechnology.com/astuntechnology/osopen/service?" />
+           </servers>
+       </replaceXML>
+    </file>
+</overrides>
