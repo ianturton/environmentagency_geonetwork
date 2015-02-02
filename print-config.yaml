@@ -90,6 +90,6 @@ layouts:
           width: 300
           items:
             - !text
-              text: 'Printed on {date}''  
+              text: 'Printed on {now}'  
               fontEncoding: Cp1252
               fontSize: 10
