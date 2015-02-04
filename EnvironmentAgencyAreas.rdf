@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ns2="http://www.w3.org/2004/02/skos/core#"
+	xmlns:ns3="http://purl.org/dc/elements/1.1/"
+	xmlns:ns6="http://www.opengis.net/gml#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="http://ea_internal#CAMBED">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da595i6x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CAMBED">
+	<ns6:BoundedBy rdf:nodeID="node19da595i6x1"/>
+	<ns2:prefLabel xml:lang="en">Cambridgeshire and Bedfordshire</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da595i6x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CAMBED">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/Environment Agency Areas">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<ns3:title>Environment Agency Areas</ns3:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CAMBED">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da595i6x1">
+	<ns6:lowerCorner>51.93312729 -0.887370504</ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5ds98x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CMBLNC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<ns6:BoundedBy rdf:nodeID="node19da5ds98x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da595i6x1">
+	<ns6:upperCorner>52.99006694 1.108299449</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5ds98x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CMBLNC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Cumbria and Lancashire</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5gj64x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DVNCWL">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5gqf6x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DVNCWL">
+	<ns6:BoundedBy rdf:nodeID="node19da5gqf6x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5gj64x1">
+	<ns6:upperCorner>53.54045242 -0.664111038</ns6:upperCorner>
+	<ns6:lowerCorner>52.39215438 -2.034097773</ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DVNCWL">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5gqf6x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5ds98x1">
+	<ns6:lowerCorner>53.48276587 -3.640621292</ns6:lowerCorner>
+	<ns6:upperCorner>55.18898136 -2.045072694</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DBNTLS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DVNCWL">
+	<ns2:prefLabel xml:lang="en">Devon and Cornwall</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DBNTLS">
+	<ns6:BoundedBy rdf:nodeID="node19da5gj64x1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5gj64x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DBNTLS">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Derbyshire Nottinghamshire and Leicestershire</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DVNCWL">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5gqf6x1">
+	<ns6:lowerCorner>49.86468452 -6.418557404</ns6:lowerCorner>
+	<ns6:upperCorner>51.24683883 -2.886640631</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#ESNFSF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5sfj9x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#ESNFSF">
+	<ns6:BoundedBy rdf:nodeID="node19da5sfj9x1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5sfj9x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6bb07x1">
+	<ns6:lowerCorner>54.45112632 -2.689785011</ns6:lowerCorner>
+	<ns6:upperCorner>55.81165983 -0.788414305</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da60hhux1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#GMMYCH">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<ns6:BoundedBy rdf:nodeID="node19da60hhux1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da60hhux1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#HTSNLN">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da60s58x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#HTSNLN">
+	<ns6:BoundedBy rdf:nodeID="node19da60s58x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da60hhux1">
+	<ns6:upperCorner>53.70433321 -1.909622259</ns6:upperCorner>
+	<ns6:lowerCorner>52.9471496 -3.263757198</ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#HTSNLN">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da60s58x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#ESNFSF">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Essex Norfolk and Suffolk</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#GMMYCH">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#HTSNLN">
+	<ns2:prefLabel xml:lang="en">Hertfordshire and North London</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#GMMYCH">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Greater Manchester Merseyside and Cheshire</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#HTSNLN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da65f80x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#KNTSLN">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<ns6:BoundedBy rdf:nodeID="node19da65f80x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da60s58x1">
+	<ns6:lowerCorner>51.42073927 -0.762138815</ns6:lowerCorner>
+	<ns6:upperCorner>52.08053638 0.34756908</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#KNTSLN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da65f80x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#KNTSLN">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Kent and South London</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#LCNNTH">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da67e7ex1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#LCNNTH">
+	<ns6:BoundedBy rdf:nodeID="node19da67e7ex1"/>
+	<ns2:prefLabel xml:lang="en">Lincolnshire and Northamptonshire</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da65f80x1">
+	<ns6:lowerCorner>50.8193078 -0.438460565</ns6:lowerCorner>
+	<ns6:upperCorner>51.51554224 1.451768972</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#LCNNTH">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da67e7ex1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#LCNNTH">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6bb07x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#NHUDUT">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6bb07x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#NHUDUT">
+	<ns6:BoundedBy rdf:nodeID="node19da6bb07x1"/>
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da67e7ex1">
+	<ns6:lowerCorner>51.97726782 -1.332346138</ns6:lowerCorner>
+	<ns6:upperCorner>53.72446275 0.3579553</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#NHUDUT">
+	<ns2:prefLabel xml:lang="en">Northumberland Durham and Tees</ns2:prefLabel>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5sfj9x1">
+	<ns6:upperCorner>52.99270443 1.768912106</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SHHRWG">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SLTSDN">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da5sfj9x1">
+	<ns6:lowerCorner>51.44827836 0.0680987837808296</ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SHHRWG">
+	<ns6:BoundedBy rdf:nodeID="node19da6hs80x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6hs80x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SHHRWG">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Shropshire Herefordshire Worcestershire and Gloucestershire</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6hs80x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SLTSDN">
+	<ns6:BoundedBy rdf:nodeID="node19da6i5g3x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6i5g3x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SLTSDN">
+	<ns2:prefLabel xml:lang="en">Solent and South Downs</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6hs80x1">
+	<ns6:upperCorner>52.99839462 -1.757409022</ns6:upperCorner>
+	<ns6:lowerCorner>51.58983348 -3.235565271</ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SLTSDN">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6i5g3x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SHHRWG">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#SLTSDN">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6i5g3x1">
+	<ns6:upperCorner>51.33935782 0.658960226</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#STWKWM">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6mgm3x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6i5g3x1">
+	<ns6:lowerCorner>50.57467675 -1.957277156</ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#STWKWM">
+	<ns6:BoundedBy rdf:nodeID="node19da6mgm3x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6mgm3x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#STWKWM">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Staffordshire Warwickshire and West Midlands</ns2:prefLabel>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6mgm3x1">
+	<ns6:lowerCorner>51.95539388 -2.470841802</ns6:lowerCorner>
+	<ns6:upperCorner>53.22622395 -1.172140344</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#WESSEX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6odtax1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#WESSEX">
+	<ns6:BoundedBy rdf:nodeID="node19da6odtax1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6odtax1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#WESSEX">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Wessex</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#YORKS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6odtax1">
+	<ns6:lowerCorner>50.512863 -3.839803027</ns6:lowerCorner>
+	<ns6:upperCorner>51.70314166 -1.485726151</ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#YORKS">
+	<ns6:BoundedBy rdf:nodeID="node19da6q06nx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6q06nx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#YORKS">
+	<ns2:prefLabel xml:lang="en">Yorkshire</ns2:prefLabel>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6q06nx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#YORKS">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da6q06nx1">
+	<ns6:lowerCorner>53.30154828 -2.564738948</ns6:lowerCorner>
+	<ns6:upperCorner>54.5621437 0.149831766</ns6:upperCorner>
+</rdf:Description>
+
+</rdf:RDF>

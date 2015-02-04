@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ns2="http://www.w3.org/2004/02/skos/core#"
+	xmlns:ns3="http://purl.org/dc/elements/1.1/"
+	xmlns:ns6="http://www.opengis.net/gml#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962325188">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7ikrv1x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962325188">
+	<ns6:BoundedBy rdf:nodeID="node19d7ikrv1x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7ikrv1x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/Approval for Access status">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<ns3:title>Approval for Access status</ns3:title>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962409813">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962325188">
+	<ns2:prefLabel xml:lang="en">Not AfA (To be Assessed)|The information should be assessed at the time of the request and is the default category within Metadata Explorer. The data has not been assessed via the AfA process.</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7inemgx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962409813">
+	<ns6:BoundedBy rdf:nodeID="node19d7inemgx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962325188">
+	<ns2:scopeNote xml:lang="en">notAfaToBeAssessed</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7inemgx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962409813">
+	<ns2:prefLabel xml:lang="en">Not AfA (To be Assessed with Guidance) |The information should be assessed at the time of the request and includes guidance relevant to the dataset. The data has been assessed via the AfA process.</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">notAfaToBeAssessedWithGuidance</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962486729">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7ippo6x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962486729">
+	<ns6:BoundedBy rdf:nodeID="node19d7ippo6x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7ippo6x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7ir47kx1">
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962486729">
+	<ns2:prefLabel xml:lang="en">AfA (Pub. Scheme and Info. for Re-Use Reg.) | All approved attributes can be licensed without further checks. Data are included on the Information for Re-Use Register and Publication Scheme.</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">afaPubSchemeAndInfoForReuseReg</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962530309">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7ir47kx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962530309">
+	<ns6:BoundedBy rdf:nodeID="node19d7ir47kx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962573373">
+	<ns6:BoundedBy rdf:nodeID="node19d7ise9qx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7ise9qx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962530309">
+	<ns2:prefLabel xml:lang="en">AfA (Public Register) | Approved for inclusion onto the Public Register only. Not available for Re-Use.</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">afaPublicRegister</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962573373">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7ise9qx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7iu1kmx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962625966">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns6:BoundedBy rdf:nodeID="node19d7iu1kmx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7iu1kmx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962573373">
+	<ns2:prefLabel xml:lang="en">AfA (Publication Scheme) |Approved for inclusion on the Publication Scheme. Not available for Re-Use.</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">afaPublicationScheme</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962625966">
+	<ns2:scopeNote xml:lang="en">afaInformationRequestsOnly</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962660376">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7iv46vx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962625966">
+	<ns2:prefLabel xml:lang="en">AfA (Information Requests only) |AfA (Information Requests only)| Approved for reactive requests for information only. Not for licensing pro-active use or publication scheme.</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962660376">
+	<ns6:BoundedBy rdf:nodeID="node19d7iv46vx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7iv46vx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://www.ea_internal#1422962660376">
+	<ns2:prefLabel xml:lang="en">Not Applicable - third party dataset | There is not a requirement to put through the approval for access process as licence conditions shall stipulate access to these data.</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">notApplicableThirdpartyDataset</ns2:scopeNote>
+</rdf:Description>
+
+</rdf:RDF>
