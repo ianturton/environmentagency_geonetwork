@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:ns2="http://www.w3.org/2004/02/skos/core#"
+	xmlns:ns3="http://purl.org/dc/elements/1.1/"
+	xmlns:ns6="http://www.opengis.net/gml#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+<rdf:Description rdf:about="http://geonetwork-opensource.org/Data Distribution Formats">
+	<ns3:title>Data Distribution Formats</ns3:title>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DFX">
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DFX">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x2">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DWG">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DFX">
+	<ns2:scopeNote xml:lang="en">CAD Data eXchange Format (DFX)</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Open format | CAD Data eXchange Format (DFX)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DWG">
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x2">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CSW">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x3">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DWG">
+	<ns2:scopeNote xml:lang="en">CAD Drawing file (DWG)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CSW">
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x3">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DWG">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  CAD Drawing file (DWG)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CSW">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x4">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#Citygm">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CSW">
+	<ns2:prefLabel xml:lang="en">OGC Web Services | Catalogue Service for the Web (CSW)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Catalogue Service for the Web (CSW)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#Citygm">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x4">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#Citygm">
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x4"/>
+	<ns2:prefLabel xml:lang="en">Open format | City GML (Citygml)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">City GML (Citygml)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CSV">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x5">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CSV">
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x5">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#CSV">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Open format | Comma Separated Values file (CSV)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Comma Separated Values file (CSV)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DBF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x6">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DBF">
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x6">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DBF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Open format | dBASE (DBF)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">dBASE (DBF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x7">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF">
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x7"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x8">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x8"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF2">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF3">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF2">
+	<ns2:scopeNote xml:lang="en">Portable Document Format - GeoReferenced (PDF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x10">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF2">
+	<ns2:prefLabel xml:lang="en">Open format | Portable Document Format - Georeferenced (PDF)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF3">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x9">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF">
+	<ns2:scopeNote xml:lang="en">Portable Document Format - Unreferenced (PDF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF1">
+	<ns2:prefLabel xml:lang="en">Open format | Portable Document Format - Standardized (PDF)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x9">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF">
+	<ns2:prefLabel xml:lang="en">Open format | Portable Document Format - Unreferenced (PDF)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:scopeNote xml:lang="en">Portable Document Format - Standardized (PDF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF3">
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x11">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DAT">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<ns6:BoundedBy rdf:nodeID="node19d7qa2a7x11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d7qa2a7x11">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#PDF3">
+	<ns2:prefLabel xml:lang="en">Open format | Portable Document Format - 3D (PDF)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Portable Document Format - 3D (PDF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DAT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d9ut5slx1">
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ea_internal#DAT">
+	<ns2:prefLabel xml:lang="en">Open format | Many DAT formats (DAT)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Many DAT formats (DAT)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#DOC">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d9ut5slx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#DOC">
+	<ns6:BoundedBy rdf:nodeID="node19d9ut5slx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d9ut5slx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#DOC">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#DOCX">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#DOC">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  MS Word or Open Office (DOC)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">MS Word or Open Office (DOC)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#DOCX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d9uvnksx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#DOCX">
+	<ns6:BoundedBy rdf:nodeID="node19d9uvnksx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d9uvnksx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#DOCX">
+	<ns2:prefLabel xml:lang="en">Open format | MS Word or Open Office (DOCX)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">MS Word or Open Office (DOCX)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ECW">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d9vph2kx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ECW">
+	<ns6:BoundedBy rdf:nodeID="node19d9vph2kx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19d9vph2kx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ECW">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2cvotx1">
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#1423045949991">
+	<ns2:scopeNote xml:lang="en">ER Mapper (ECW)</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Label</ns2:prefLabel>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2cvotx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#1423045949991">
+	<ns6:BoundedBy rdf:nodeID="node19da2cvotx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2cvotx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2etf1x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ECW">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  ER Mapper (ECW)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">ER Mapper (ECW)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GDB">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2etf1x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GDB">
+	<ns6:BoundedBy rdf:nodeID="node19da2etf1x1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#Geo">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2g7ucx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GDB">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  ESRI File based Geodatabase (GDB)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">ESRI File based Geodatabase (GDB)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#Geo">
+	<ns6:BoundedBy rdf:nodeID="node19da2g7ucx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2g7ucx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#Geo">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2ij6nx1">
+	<ns6:upperCorner> </ns6:upperCorner>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoTIFF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoJSON">
+	<ns2:scopeNote xml:lang="en">JavaScript Object Notation (GeoJSON)</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Open format | JavaScript Object Notation (GeoJSON)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoTIFF">
+	<ns6:BoundedBy rdf:nodeID="node19da2ij6nx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2ij6nx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#Geo">
+	<ns2:prefLabel xml:lang="en">Open format | GeoRSS (Geo)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">GeoRSS (Geo)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoJSON">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2ij6nx1">
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2h7e1x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoJSON">
+	<ns6:BoundedBy rdf:nodeID="node19da2h7e1x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2h7e1x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoJSON">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoTIFF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GIF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2lmiex1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoTIFF">
+	<ns2:scopeNote xml:lang="en">Geo Tagged Image File Format (GeoTIFF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GIF">
+	<ns6:BoundedBy rdf:nodeID="node19da2lmiex1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2lmiex1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GeoTIFF">
+	<ns2:prefLabel xml:lang="en">Open format | Geo Tagged Image File Format (GeoTIFF)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GIF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:scopeNote xml:lang="en">Graphical Interchange Format (GIF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GML">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2n5crx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GIF">
+	<ns2:prefLabel xml:lang="en">Proprietary format | Graphical Interchange Format (GIF)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GML">
+	<ns6:BoundedBy rdf:nodeID="node19da2n5crx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2n5crx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GML">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Open format | Geography Markup Language (GML)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Geography Markup Language (GML)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GPKG">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2ofd3x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GPKG">
+	<ns6:BoundedBy rdf:nodeID="node19da2ofd3x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2ofd3x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GPKG">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2r1vhx1">
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#GPKG">
+	<ns2:prefLabel xml:lang="en">Open format | GeoPackage (GPKG)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">GeoPackage (GPKG)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#IMG">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2r1vhx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#IMG">
+	<ns6:BoundedBy rdf:nodeID="node19da2r1vhx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2r1vhx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#IMG">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2t4uqx1">
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#IMG">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  ERDAS IMAGINE (IMG)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">ERDAS IMAGINE (IMG)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JPEG">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2t4uqx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JPEG">
+	<ns6:BoundedBy rdf:nodeID="node19da2t4uqx1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2u6obx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JPEG">
+	<ns2:prefLabel xml:lang="en">Open format | Joint Photographic Experts Group (JPEG)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Joint Photographic Experts Group (JPEG)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JPEG2000">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2u6obx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JPEG2000">
+	<ns6:BoundedBy rdf:nodeID="node19da2u6obx1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JSON">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2vjp6x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JPEG2000">
+	<ns2:prefLabel xml:lang="en">Open format | Joint Photographic Experts Group 2000 (JPEG2000)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Joint Photographic Experts Group 2000 (JPEG2000)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JSON">
+	<ns6:BoundedBy rdf:nodeID="node19da2vjp6x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da2vjp6x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JSON">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da30skmx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#KML">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da30skmx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#JSON">
+	<ns2:prefLabel xml:lang="en">OGC Web Services | JavaScript Object Notation (JSON)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">JavaScript Object Notation (JSON)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#KML">
+	<ns6:BoundedBy rdf:nodeID="node19da30skmx1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da32c4sx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#KMZ">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<ns6:BoundedBy rdf:nodeID="node19da32c4sx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da32c4sx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#KML">
+	<ns2:prefLabel xml:lang="en">Open format | Keyhole Markup Language (KML)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Keyhole Markup Language (KML)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#KMZ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#LAS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da33ok1x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#KMZ">
+	<ns2:scopeNote xml:lang="en">Keyhole Markup Language Zipped (KMZ)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#LAS">
+	<ns6:BoundedBy rdf:nodeID="node19da33ok1x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da33ok1x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#KMZ">
+	<ns2:prefLabel xml:lang="en">Open format | Keyhole Markup Language Zipped (KMZ)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#LAS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:scopeNote xml:lang="en">Lidar Data Exchange Format (LAS)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#LAZ">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3ib36x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#LAS">
+	<ns2:prefLabel xml:lang="en">Open format | Lidar Data Exchange Format (LAS)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#LAZ">
+	<ns6:BoundedBy rdf:nodeID="node19da3ib36x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3ib36x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#LAZ">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Open format | Lidar Data Exchange Format (LAZ)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Lidar Data Exchange Format (LAZ)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MDB">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3js2ux1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MDB">
+	<ns6:BoundedBy rdf:nodeID="node19da3js2ux1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3js2ux1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MDB">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3ks2lx1">
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MDB">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  ESRI, Intergraph, MS Access (MDB)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">MDB (ESRI, Intergraph, MS Access) (MDB)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MIF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3ks2lx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MIF">
+	<ns6:BoundedBy rdf:nodeID="node19da3ks2lx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3ks2lx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MIF">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3m48cx1">
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MIF">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  MapInfo MIF/MID (MIF)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">MapInfo MIF/MID (MIF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MrSID">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3m48cx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MrSID">
+	<ns6:BoundedBy rdf:nodeID="node19da3m48cx1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3odopx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#MrSID">
+	<ns2:prefLabel xml:lang="en">Compressed format | Multi-resolution Seamless Image Database (MrSID)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Mr Sid (Multi-resolution Seamless Image Database) (MrSID)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#NTF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3odopx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#NTF">
+	<ns6:BoundedBy rdf:nodeID="node19da3odopx1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODP">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3pkksx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#NTF">
+	<ns2:prefLabel xml:lang="en">Open format | National Transfer Format - OS (NTF)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">National Transfer Format - OS (NTF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODP">
+	<ns6:BoundedBy rdf:nodeID="node19da3pkksx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3pkksx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODP">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3qvnqx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3qvnqx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODP">
+	<ns2:prefLabel xml:lang="en">Open format | Open Document Presentation (ODP)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Open Document Presentation (ODP)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODS">
+	<ns6:BoundedBy rdf:nodeID="node19da3qvnqx1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3s6hqx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODT">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+	<ns6:BoundedBy rdf:nodeID="node19da3s6hqx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3s6hqx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODS">
+	<ns2:prefLabel xml:lang="en">Open format | Open Document Spreadsheet (ODS)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Open Document Spreadsheet (ODS)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODT">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#PNG">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3va6fx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODT">
+	<ns2:scopeNote xml:lang="en">Open Document Text (ODT)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#PNG">
+	<ns6:BoundedBy rdf:nodeID="node19da3va6fx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da3va6fx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#ODT">
+	<ns2:prefLabel xml:lang="en">Open format | Open Document Text (ODT)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#PNG">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:scopeNote xml:lang="en">Portable Network Graphics (PNG)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#RAW">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da40689x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#PNG">
+	<ns2:prefLabel xml:lang="en">Open format | Portable Network Graphic (PNG)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#RAW">
+	<ns6:BoundedBy rdf:nodeID="node19da40689x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da40689x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#RAW">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Proprietary format |  ERDASRaw (RAW)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">ERDASRaw (RAW)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#SHP">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4165cx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#SHP">
+	<ns6:BoundedBy rdf:nodeID="node19da4165cx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4165cx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#SHP">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da425ajx1">
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#SHP">
+	<ns2:prefLabel xml:lang="en">Open format | Shapefile (SHP)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Shapefile (SHP)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TAB">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da425ajx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TAB">
+	<ns6:BoundedBy rdf:nodeID="node19da425ajx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da425ajx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TAB">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4447fx1">
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TAB">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  MapInfo (TAB)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">MapInfo (TAB)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TIFF">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4447fx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TIFF">
+	<ns6:BoundedBy rdf:nodeID="node19da4447fx1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da450vhx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#1423047787048">
+	<ns2:scopeNote xml:lang="en">Definition</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Compressed format | Packbit (TIFF)</ns2:prefLabel>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da450vhx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#1423047787048">
+	<ns6:BoundedBy rdf:nodeID="node19da450vhx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da46i3cx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TIFF1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da46i3cx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TIFF">
+	<ns2:prefLabel xml:lang="en">Compressed format | Packbit (TIFF)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Packbit (TIFF)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TIFF1">
+	<ns6:BoundedBy rdf:nodeID="node19da46i3cx1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:scopeNote xml:lang="en">Tagged Image File Format (TIFF)</ns2:scopeNote>
+	<ns2:prefLabel xml:lang="en">Open format | Tagged Image File Format (TIFF)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TSV">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da47cn3x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TSV">
+	<ns6:BoundedBy rdf:nodeID="node19da47cn3x1"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XLS">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da48btrx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TSV">
+	<ns2:scopeNote xml:lang="en">Tab Separated Values (TSV)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XLS">
+	<ns6:BoundedBy rdf:nodeID="node19da48btrx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da48btrx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#TSV">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  Tab Separated Values (TSV)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XLS">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:scopeNote xml:lang="en">MS Excel (XLS)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XLSX">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da49ihpx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XLS">
+	<ns2:prefLabel xml:lang="en">Proprietary format |  MS Excel (XLS)</ns2:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XLSX">
+	<ns6:BoundedBy rdf:nodeID="node19da49ihpx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da49ihpx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XLSX">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Open format |  MS Excel (XLSX)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">MS Excel (XLSX)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XML">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4ag69x1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XML">
+	<ns6:BoundedBy rdf:nodeID="node19da4ag69x1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4ag69x1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XML">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4dm1cx1">
+	<ns6:upperCorner> </ns6:upperCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XML">
+	<ns2:prefLabel xml:lang="en">Open format | Many XML formats (XML)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Many XML formats (XML)</ns2:scopeNote>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XML1">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4dm1cx1">
+	<ns6:srsName rdf:resource="http://www.opengis.net/gml/srs/epsg.xml#epsg:4326"/>
+	<ns6:lowerCorner> </ns6:lowerCorner>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XML1">
+	<ns6:BoundedBy rdf:nodeID="node19da4dm1cx1"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node19da4dm1cx1">
+	<rdf:type rdf:resource="http://www.opengis.net/gml#Envelope"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://custom.shared.obj.ch/concept#XML1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<ns2:prefLabel xml:lang="en">Open format | Resource Description Framework (XML)</ns2:prefLabel>
+	<ns2:scopeNote xml:lang="en">Resource Description Framework (XML)</ns2:scopeNote>
+</rdf:Description>
+
+</rdf:RDF>
