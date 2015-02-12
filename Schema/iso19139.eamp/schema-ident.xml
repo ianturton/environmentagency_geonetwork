@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://geonetwork-opensource.org/schemas/schema-ident http://geonetwork-opensource.org/schemas/schema-ident/schema-ident.xsd">
 
     <name>iso19139.eamp</name>
-    <id>9e515100-2200-11df-8626-g35151002200</id>
+    <id>9e515100-2200-11df-8626-g35151002209</id>
     <version>1.1</version>
     <depends>iso19139</depends>
     <depends>iso19139.gemini22</depends>
