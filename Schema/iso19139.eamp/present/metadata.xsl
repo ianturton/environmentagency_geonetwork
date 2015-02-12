@@ -46,8 +46,19 @@
     <xsl:template name="iso19139.eamp-javascript"/>
 
     <xsl:template name="iso19139.eampBrief">
-        <!-- Let the original ISO19139 templates do the work -->
-        <xsl:call-template name="iso19139Brief"/>
+        <metadata>
+      <xsl:choose>
+        <xsl:when test="geonet:info/isTemplate='s'">
+          <xsl:apply-templates mode="iso19139-subtemplate" select="."/>
+          <xsl:copy-of select="geonet:info" copy-namespaces="no"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:call-template name="iso19139-brief"/>
+          <!-- now brief elements for mcp specific elements -->
+        <xsl:call-template name="iso19139.eamp-brief"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </metadata>
     </xsl:template>
 
 
@@ -60,6 +71,17 @@
         <xsl:call-template name="iso19139String">
             <xsl:with-param name="schema" select="$schema"/>
             <xsl:with-param name="edit"   select="false()"/>
+        </xsl:call-template>
+    </xsl:template>
+
+    <!-- Override with eamp where required -->
+
+    <xsl:template mode="iso19139" match="eamp:*[gco:CharacterString|gco:Integer]" priority="150">
+        <xsl:param name="schema"/>
+
+        <xsl:call-template name="iso19139String">
+            <xsl:with-param name="schema" select="$schema"/>
+            <xsl:with-param name="edit"   select="$edit"/>
         </xsl:call-template>
     </xsl:template>
 
@@ -88,7 +110,7 @@
     <xsl:param name="schema"/>
     <xsl:param name="edit"/>
 
-    <xsl:call-template name="iso19139GetIsoLanguage_gemini">
+    <xsl:call-template name="iso19139GetIsoLanguage_eamp">
       <xsl:with-param name="value" select="string(@codeListValue)"/>
       <xsl:with-param name="ref" select="concat('_', geonet:element/@ref, '_codeListValue')"/>
       <xsl:with-param name="schema" select="$schema"/>
@@ -96,7 +118,7 @@
     </xsl:call-template>
   </xsl:template>
 
-  <xsl:template name="iso19139GetIsoLanguage_gemini">
+  <xsl:template name="iso19139GetIsoLanguage_eamp">
     <xsl:param name="schema"/>
     <xsl:param name="edit"/>
     <xsl:param name="value"/>
@@ -142,4 +164,20 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+
+<!-- ============================================================================= -->
+  <!-- utilities -->
+  <!-- ============================================================================= -->
+  
+    
+  <!-- additional handling of eamp extension elements -->
+  <xsl:template mode="iso19139.eamp" match="eamp:EA_Constraints">
+    <xsl:param name="schema"/>
+    <xsl:param name="edit"/>
+    <xsl:apply-templates mode="complexElement" select=".">
+      <xsl:with-param name="schema" select="$schema"/>
+      <xsl:with-param name="edit" select="$edit"/>
+    </xsl:apply-templates>
+  </xsl:template> 
+
 </xsl:stylesheet>
