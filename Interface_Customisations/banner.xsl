@@ -95,7 +95,7 @@
                         </xsl:otherwise>
                     </xsl:choose>
                     |
-                    <!-- Help section to be displayed according to GUI language -->
+                    <!-- Help section to be displayed according to GUI language
                     <xsl:choose>
                         <xsl:when test="java:file-exists(concat(resolve-uri('../', replace(static-base-uri(), 'file:', '')), 'docs/', /root/gui/language, '/users/index.html'))">
                             <a class="banner" href="{/root/gui/url}/docs/{/root/gui/language}/users" target="_blank"><xsl:value-of select="/root/gui/strings/help"/></a>
@@ -103,7 +103,25 @@
                         <xsl:otherwise>
                             <a class="banner" href="http://geonetwork-opensource.org/manuals/2.10.4/eng/users/index.html" target="_blank"><xsl:value-of select="/root/gui/strings/help"/></a>
                         </xsl:otherwise>
-                    </xsl:choose>
+                    </xsl:choose>-->
+
+
+		<xsl:choose> 
+ 			<xsl:when test="/root/gui/reqService='help'"> 
+ 				<font class="banner-active"><xsl:value-of select="/root/gui/strings/help"/></font> 
+ 			</xsl:when> 
+ 			<xsl:otherwise> 
+ 				<a class="banner" href="{/root/gui/locService}/help"><xsl:value-of select="/root/gui/strings/help"/></a> 
+ 			</xsl:otherwise> 
+		</xsl:choose>
+		    <!--<xsl:choose>
+			<xsl:when test="/root/gui/reqService='help'">
+				<font class="banner-active"><xsl:value-of select="/root/gui/strings/help"/></font>
+			<xsl:when>
+		    <xsl:otherwise>
+			<a class="banner" onclick="doBannerButton('{/root/gui/locService}/help','{/root/gui/strings/help}','{$modal}',600)" href="javascript:void(0);"><xsl:value-of select="/root/gui/strings/help"/></a>
+		    </xsl:otherwise>
+		   </xsl:choose> -->
                     |
                 </td>
                 <td align="right" class="banner-menu" width="590px">
