@@ -114,15 +114,10 @@
  				<a class="banner" href="{/root/gui/locService}/help"><xsl:value-of select="/root/gui/strings/help"/></a> 
  			</xsl:otherwise> 
 		</xsl:choose>
-		    <!--<xsl:choose>
-			<xsl:when test="/root/gui/reqService='help'">
-				<font class="banner-active"><xsl:value-of select="/root/gui/strings/help"/></font>
-			<xsl:when>
-		    <xsl:otherwise>
-			<a class="banner" onclick="doBannerButton('{/root/gui/locService}/help','{/root/gui/strings/help}','{$modal}',600)" href="javascript:void(0);"><xsl:value-of select="/root/gui/strings/help"/></a>
-		    </xsl:otherwise>
-		   </xsl:choose> -->
-                    |
+		    |
+
+		<a class="banner" href="http://data.gov.uk" target="_blank">data.gov.uk</a>
+		|
                 </td>
                 <td align="right" class="banner-menu" width="590px">
                     <xsl:if test="count(/root/gui/config/languages/*) &gt; 1">
