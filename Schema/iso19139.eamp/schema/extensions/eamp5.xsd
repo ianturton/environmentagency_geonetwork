@@ -8,10 +8,12 @@
 	<xs:annotation>
 		<xs:documentation>Schema for Environment Agency Metadata Profile v1.1</xs:documentation>
 	</xs:annotation>
+	
 	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
 	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
 	<xs:import namespace="http://www.isotc211.org/2005/srv" schemaLocation="../srv/srv.xsd"/>
 	<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../gml/gml.xsd"/>
+
 	<!-- =========================================================================== -->
 <!--	<xs:complexType name="EA_Metadata_Type">
 		<xs:annotation>
