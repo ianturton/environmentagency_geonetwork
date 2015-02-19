@@ -249,8 +249,7 @@
 								border:false,
 								layout: 'border',
 								items: [
-//Remove preview map
-									/*{region:'north',
+								{region:'north',
 									id: 'north-map-panel',
 									title: '<xsl:value-of select="/root/gui/strings/mapViewer"/>',
 									border:false,
@@ -267,7 +266,7 @@
 											},
 									items: [mapViewport]
 									
-									},*/
+									},
 									{region:'center', 
 									contentEl :'content',
 									border:false,
@@ -502,13 +501,14 @@
 						<xsl:value-of select="/root/gui/env/feedback/email"/>
 					</a>
 				</div>
-				
+				<!--Remove featured map
 				<xsl:if test="/root/gui/featured/*">
 					<div style="padding: 10px;">
 							<xsl:comment>Featured Map</xsl:comment>
 							<xsl:call-template name="featured"/>
 					</div>
 				</xsl:if>
+				-->
 			</div>
 		</div>
 	</xsl:template>
@@ -575,7 +575,7 @@
 		<xsl:if test="/root/gui/latestUpdated/*">
 			<div class="geosearchfields">
 				<h1 align="left">
-					<!--xsl:value-of select="/root/gui/strings/recentAdditions"/--> &#160;&#160;&#160; 
+					<xsl:value-of select="/root/gui/strings/recentAdditions"/> &#160;&#160;&#160; 
 					<a href="{/root/gui/locService}/rss.latest?georss=simplepoint" target="_blank">
 						<img style="cursor:hand;cursor:pointer" src="{/root/gui/url}/images/georss.png"
 							alt="GeoRSS-GML" title="{/root/gui/strings/georss}" align="top"/>
@@ -602,6 +602,11 @@
 	<xsl:template name="categories">
 		<xsl:if test="/root/gui/categories/* and /root/gui/config/category/admin">
 			<div class="geosearchfields" style="margin-top:10px">
+				<!--heading for Categories-->
+
+				<h1 align="left">
+				<xsl:value-of select="/root/gui/strings/categories"/>
+				</h1>
 				<xsl:for-each select="/root/gui/categories/*">
 					<xsl:sort select="label/child::*[name() = $lang]" order="ascending"/>
 					<xsl:variable name="categoryName" select="name"/>

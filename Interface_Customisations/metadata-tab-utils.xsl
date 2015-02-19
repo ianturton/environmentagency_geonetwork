@@ -31,13 +31,12 @@
 		<xsl:param name="metadata"/>
 
 		<xsl:choose>
-
+<!-- Show no thumbnails-->
+			<xsl:when test="1=1"/>
 			<!-- small thumbnail -->
 			<xsl:when test="$metadata/image[@type='thumbnail']">
 
 				<xsl:choose>
-<!--show no thumbnails-->
-					<xsl:when test="1=1"/>
 
 					<!-- large thumbnail link -->
 					<xsl:when test="$metadata/image[@type='overview']">

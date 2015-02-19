@@ -145,7 +145,9 @@
 						 onChange="if (this.options[this.selectedIndex].value=='title') $('sortOrder').value = 'reverse'; else $('sortOrder').value = ''">
 						<xsl:for-each select="/root/gui/strings/sortByType">
 							<option value="{@id}">
-								<xsl:if test="@id = /root/gui/searchDefaults/sortBy">
+<!--Set default searchy to title-->
+							<!--	<xsl:if test="@id = /root/gui/searchDefaults/sortBy">-->
+								<xsl:if test="@id = 'title'">
 									<xsl:attribute name="selected">selected</xsl:attribute>
 								</xsl:if>
 								<xsl:value-of select="."/>
@@ -560,7 +562,9 @@
 		<xsl:call-template name="adv_mcp"/>
 	
 		<!-- Map type -->
-		<div class="row">  <!-- div row-->
+<!--remove map type search-->
+<!--
+		<div class="row">  
 			<a onclick="showFields('maptype.img','maptype.table')" style="cursor:pointer;cursor:hand;">
 				<img id="maptype.img" src="{/root/gui/url}/images/plus.gif" alt="" />
 				<xsl:text> </xsl:text>	
@@ -602,6 +606,7 @@
 				</tr>
 			</table>
 		</div>
+-->
 
 		<!-- Fuzzy search -->	
 		<div class="row">

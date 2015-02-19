@@ -148,7 +148,9 @@
 					  onChange="if (this.options[this.selectedIndex].value=='title') $('sortOrder_simple').value = 'reverse'; else $('sortOrder_simple').value = ''">
 						<xsl:for-each select="/root/gui/strings/sortByType">
 							<option value="{@id}">
-								<xsl:if test="@id = /root/gui/searchDefaults/sortBy">
+<!--Set default search order to title-->
+							<!--	<xsl:if test="@id = /root/gui/searchDefaults/sortBy">-->
+								<xsl:if test="@id = 'title'">
 									<xsl:attribute name="selected">selected</xsl:attribute>
 								</xsl:if>
 								<xsl:value-of select="."/>
