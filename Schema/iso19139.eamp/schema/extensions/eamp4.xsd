@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:eamp="http://environment.data.gov.uk/eamp" targetNamespace="http://environment.data.gov.uk/eamp" elementFormDefault="qualified" version="0.1">
+	<!--
+	Copyright: (c) Environment Agency, 2015
+	Author: John Tate
+	Version Date: 06/02/2015
+-->
+	<xs:annotation>
+		<xs:documentation>Schema for Environment Agency Metadata Profile v1.1</xs:documentation>
+	</xs:annotation>
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../iso/19139/20070417/gmd/gmd.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../iso/19139/20070417/gco/gco.xsd"/>
+	<!-- =========================================================================== -->
+	<xs:complexType name="EA_Metadata_Type">
+		<xs:annotation>
+			<xs:documentation>Extension for EA that captures internal information</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gmd:MD_Metadata_Type">
+				<xs:sequence>
+					<xs:element name="resourceConstraints" type="gmd:MD_Constraints_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute ref="gco:isoType" use="required" fixed="gmd:MD_Metadata"/>
+			</xs:extension>
+			<!---->
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="EA_Metadata" type="eamp:EA_Metadata_Type" substitutionGroup="gmd:MD_Metadata"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="EA_Metadata_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="eamp:EA_Metadata"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="EA_Constraints_Type">
+		<xs:annotation>
+			<xs:documentation>Extension for EA afa element that captures afa information</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gmd:MD_Constraints_Type">
+				<xs:sequence>
+					<xs:element name="afa" type="eamp:EA_Afa_PropertyType" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+				<xs:attribute ref="gco:isoType" use="required" fixed="gmd:MD_Constraints"/>
+			</xs:extension>
+			<!---->
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="EA_Constraints" type="eamp:EA_Constraints_Type" substitutionGroup="gmd:MD_Constraints"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="EA_Constraints_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="eamp:EA_Constraints"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="EA_Afa_Type">
+		<xs:annotation>
+			<xs:documentation>Main parent element for AfA sub-elements</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<!-- For the AfA status - restricted list, see below - implement as codelist (needs to be done). -->
+					<xs:element name="afaNumber" type="gco:Integer_PropertyType" minOccurs="0" maxOccurs="1"/>
+					<!-- For the AfA status - restricted list, see below - implement as codelist (needs to be done). -->
+					<xs:element name="afaStatus" type="eamp:EA_AfaStatus_PropertyType" minOccurs="0" maxOccurs="1"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="EA_Afa" type="eamp:EA_Afa_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="EA_Afa_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="eamp:EA_Afa"/>
+		</xs:sequence>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:simpleType name="EA_AfaStatus_Type">
+		<xs:annotation>
+			<xs:documentation>Enumerates the AfA status</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AfA (Pubication Scheme and Information for Re-Use Register)"/>
+			<xs:enumeration value="AfA (Public Register)"/>
+			<xs:enumeration value="AfA (Publication Scheme)"/>
+			<xs:enumeration value="AfA (Information Requests only)"/>
+			<xs:enumeration value="Not AfA (To be Assessed)"/>
+			<xs:enumeration value="Not AfA (To be Assessed with Guidance)"/>
+			<xs:enumeration value="Not Applicable – Third Party Dataset"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- ........................................................................ -->
+	<xs:element name="EA_AfaStatus" type="eamp:EA_AfaStatus_Type" substitutionGroup="gco:CharacterString"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="EA_AfaStatus_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="eamp:EA_AfaStatus"/>
+		</xs:sequence>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+</xs:schema>
