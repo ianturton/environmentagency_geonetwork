@@ -36,7 +36,8 @@
 
             <!-- buttons -->
             <tr class="banner">
-                <td class="banner-menu" width="380px">
+				<!-- EAMP changed width from 380px to 550px-->
+				<td class="banner-menu" width="550px">
                     <a class="banner" href="{/root/gui/locService}/home"><xsl:value-of select="/root/gui/strings/home"/></a>
                     |
                     <xsl:if test="$modal">
@@ -118,45 +119,33 @@
 
 		<a class="banner" href="http://data.gov.uk" target="_blank">data.gov.uk</a>
 		|
+					<xsl:choose> 
+						<xsl:when test="/root/gui/reqService='help'"> 
+							<font class="banner-active"><xsl:value-of select="/root/gui/strings/help"/></font> 
+						</xsl:when> 
+						<xsl:otherwise> 
+							<a class="banner" href="{/root/gui/locService}/help"><xsl:value-of select="/root/gui/strings/help"/></a> 
+						</xsl:otherwise> 
+					</xsl:choose>
+					|
+					<!-- EAMP additions -->
+					<a class="banner" href="http://data.gov.uk" target="_blank">Data.Gov.UK</a>
+					|
+					<a class="banner" href="http://intranet.ea.gov/knowledge/data/29816.aspx" target="_blank">Easinet</a>
+					|
+					<a class="banner" href="http://intranet.ea.gov/tools/applications/11639.aspx" target="_blank">Easimap</a>
                 </td>
-                <td align="right" class="banner-menu" width="590px">
-                    <xsl:if test="count(/root/gui/config/languages/*) &gt; 1">
-                        <!-- Redirect to current page when no error could happen
-                        (ie. when having no parameters in GET), if not redirect to the home page. -->
-                        <xsl:variable name="redirectTo">
-                            <xsl:choose>
-                                <xsl:when test="/root/gui/reqService='metadata.show'">main.home</xsl:when>
-                                <!-- TODO : Add other exception ? -->
-                                <xsl:otherwise><xsl:value-of select="/root/gui/reqService"/></xsl:otherwise>
-                            </xsl:choose>
-                        </xsl:variable>
-
-                        <select class="banner-content content">
-                            <xsl:attribute name="onchange">location.replace('../' + this.options[this.selectedIndex].value + '/<xsl:value-of select="$redirectTo"/>');</xsl:attribute>
-                            <xsl:for-each select="/root/gui/config/languages/*">
-                                <xsl:variable name="lang" select="name(.)"/>
-                                <option value="{$lang}">
-                                    <xsl:if test="/root/gui/language=$lang">
-                                        <xsl:attribute name="selected">selected</xsl:attribute>
-                                    </xsl:if>
-                                    <xsl:value-of select="/root/gui/strings/*[name(.)=$lang]"/>
-                                </option>
-                            </xsl:for-each>
-                        </select>
-                    </xsl:if>
-                </td>
-            </tr>
-
-            <!-- FIXME: should also contain links to last results and metadata -->
-
-            <!-- login -->
-            <tr class="banner">
-                <td class="banner-login" align="right" width="380px">
+				
+				<!-- EAMP Moved the login bit to this row -->
+                <!--<td align="right" class="banner-menu" width="500px">
+				
+				<td class="banner-login" align="right" width="380px">-->
+				<!-- <td class="banner-login" align="right" width="500px"> -->
                     <!-- FIXME
                     <button class="banner" onclick="goSubmit('{/root/gui/service}/es/main.present')">Last search results (11-20 of 73)</button>
                     <a class="banner" href="{/root/gui/service}/es/main.present">Last search results (11-20 of 73)<xsl:value-of select="/root/gui/strings/results"/></a>
                     -->
-                </td>
+                <!-- </td> -->
                 <xsl:choose>
                     <xsl:when test="string(/root/gui/session/userId)!=''">
                         <td align="right" class="banner-login">
@@ -216,7 +205,106 @@
                         </td>
                     </xsl:otherwise>
                 </xsl:choose>
+				
+				<!-- EAMP Commented out the whole of the old language section -->
+<!--                     <xsl:if test="count(/root/gui/config/languages/*) &gt; 1"> -->
+                        <!-- Redirect to current page when no error could happen
+                        (ie. when having no parameters in GET), if not redirect to the home page. -->
+<!--                         <xsl:variable name="redirectTo">
+                            <xsl:choose>
+                                <xsl:when test="/root/gui/reqService='metadata.show'">main.home</xsl:when> -->
+                                <!-- TODO : Add other exception ? -->
+<!--                                 <xsl:otherwise><xsl:value-of select="/root/gui/reqService"/></xsl:otherwise>
+                            </xsl:choose>
+                        </xsl:variable>
+
+                        <select class="banner-content content">
+                            <xsl:attribute name="onchange">location.replace('../' + this.options[this.selectedIndex].value + '/<xsl:value-of select="$redirectTo"/>');</xsl:attribute>
+                            <xsl:for-each select="/root/gui/config/languages/*">
+                                <xsl:variable name="lang" select="name(.)"/>
+                                <option value="{$lang}">
+                                    <xsl:if test="/root/gui/language=$lang">
+                                        <xsl:attribute name="selected">selected</xsl:attribute>
+                                    </xsl:if>
+                                    <xsl:value-of select="/root/gui/strings/*[name(.)=$lang]"/>
+                                </option>
+                            </xsl:for-each>
+                        </select>
+                    </xsl:if> 
+                </td>-->
             </tr>
+
+			<!-- EAMP Commented out the whole of the second row for the login details and moved into row above -->
+            <!-- FIXME: should also contain links to last results and metadata -->
+
+            <!-- login -->
+           <!--  <tr class="banner">
+                <td class="banner-login" align="right" width="380px"> -->
+                    <!-- FIXME
+                    <button class="banner" onclick="goSubmit('{/root/gui/service}/es/main.present')">Last search results (11-20 of 73)</button>
+                    <a class="banner" href="{/root/gui/service}/es/main.present">Last search results (11-20 of 73)<xsl:value-of select="/root/gui/strings/results"/></a>
+                    -->
+               <!--  </td>
+                <xsl:choose>
+                    <xsl:when test="string(/root/gui/session/userId)!=''">
+                        <td align="right" class="banner-login">
+                            <form name="logout" action="{/root/gui/url}/j_spring_security_logout" method="post">
+                                <xsl:value-of select="/root/gui/strings/user"/>
+                                <xsl:text>: </xsl:text>
+                                <xsl:value-of select="/root/gui/session/name"/>
+                                <xsl:text> </xsl:text>
+                                <xsl:value-of select="/root/gui/session/surname"/>
+                                <xsl:text> </xsl:text>
+                                <button class="banner" onclick="doLogout()"><xsl:value-of select="/root/gui/strings/logout"/></button>
+                            </form>
+                        </td>
+                    </xsl:when>
+                    <xsl:when test="string(/root/gui/reqService) = 'login.form'"> -->
+                        <!-- let login page display fields -->
+                        <!-- <td align="right" class="banner-login"></td>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <td align="right" class="banner-login">
+                            <xsl:choose>
+                                <xsl:when test="java:isCasEnabled()">
+                                    <xsl:variable name="casparams">
+                                        <xsl:apply-templates mode="casParams" select="root/request/*"></xsl:apply-templates>
+                                    </xsl:variable>
+                                    <a class="banner" href="{/root/gui/locService}/{/root/gui/reqService}?casLogin{$casparams}">
+                                        <xsl:value-of select="/root/gui/strings/login"/>
+                                    </a>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <xsl:variable name="paramString">
+                                        <xsl:if test="/root/request/*">
+                                            <xsl:text>?</xsl:text>
+                                            <xsl:for-each select="/root/request/*">
+                                                <xsl:if test="preceding-sibling::*"><xsl:text>&amp;</xsl:text></xsl:if>
+                                                <xsl:value-of select="name(.)"/><xsl:text>=</xsl:text><xsl:value-of select="."/>
+                                            </xsl:for-each>
+                                        </xsl:if>
+                                    </xsl:variable>
+
+                                    <form name="login" action="{/root/gui/url}/j_spring_security_check?redirectUrl=/srv/{/root/gui/language}/{/root/gui/reqService}{$paramString}" method="post">
+                                        <xsl:if test="string(/root/gui/env/shib/use)='true'">
+                                            <a class="banner" href="{/root/gui/env/shib/path}">
+                                                <xsl:value-of select="/root/gui/strings/shibLogin"/>
+                                            </a>
+                                            |
+                                        </xsl:if>
+                                        <input type="submit" style="display: none;" />
+                                        <xsl:value-of select="/root/gui/strings/username"/>
+                                        <input class="banner" type="text" id="username" name="username" size="10" onkeypress="return entSub('login')"/>
+                                        <xsl:value-of select="/root/gui/strings/password"/>
+                                        <input class="banner" type="password" id="password" name="password" size="10" onkeypress="return entSub('login')"/>
+                                        <button class="banner" onclick="goSubmit('login')"><xsl:value-of select="/root/gui/strings/login"/></button>
+                                    </form>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </td>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </tr> -->
         </table>
     </xsl:template>
 
