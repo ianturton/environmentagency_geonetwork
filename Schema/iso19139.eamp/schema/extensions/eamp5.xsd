@@ -8,10 +8,11 @@
 	<xs:annotation>
 		<xs:documentation>Schema for Environment Agency Metadata Profile v1.1</xs:documentation>
 	</xs:annotation>
-	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../iso/19139/20070417/gmd/gmd.xsd"/>
-	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../iso/19139/20070417/gco/gco.xsd"/>
-	<xs:import namespace="http://www.isotc211.org/2005/srv" schemaLocation="../iso/19139/20070417/srv/srv.xsd"/>
-	<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../gml/3.2.1/gml.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<xs:import namespace="http://www.isotc211.org/2005/srv" schemaLocation="../srv/srv.xsd"/>
+	<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../gml/gml.xsd"/>
+
 	<!-- =========================================================================== -->
 <!--	<xs:complexType name="EA_Metadata_Type">
 		<xs:annotation>
@@ -68,7 +69,7 @@
 			<xs:extension base="gco:AbstractObject_Type">
 				<xs:sequence>
 					<!-- For the AfA status - restricted list, see below - implement ass codelist (needs to be done). -->
-					<xs:element name="afaNumber" type="gco:Integer_PropertyType" minOccurs="0"/>
+					<xs:element name="afaNumber" type="gco:Decimal_PropertyType" minOccurs="0"/>
 					<!-- For the AfA status - restricted list, see below - implement ass codelist (needs to be done). -->
 					<xs:element name="afaStatus" type="eamp:EA_AfaStatus_PropertyType" minOccurs="0"/>
 				</xs:sequence>
