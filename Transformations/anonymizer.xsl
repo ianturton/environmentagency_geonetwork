@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--	Trasformation for EAMP extended metadata to data.go.uk, anonymizing and removing information on the way out of GeoNetwork.
-		Some information has been swapped around so that it displays more pertinently on the data.gov.uk website, as the headings of
-		the elements on the display page are not Gemini compliant and a bit muddled.
-		Author:		Environment Agency
-		Date:		2015 02 20
-		Version:	1
+	Some information has been swapped around so that it displays more pertinently on the data.gov.uk website, as the headings of
+	the elements on the display page are not Gemini compliant and a bit muddled.
+	Author:		Environment Agency
+	Date:		2015 02 20
+	Version:	1
 -->
 
 <xsl:stylesheet version="1.0" exclude-result-prefixes="eamp" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:eamp="http://environment.data.gov.uk/eamp" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -137,7 +137,7 @@
 	  </gmd:contact>
 	</xsl:template>
 	
-	<!-- Adds Published Doc Id from Esri to URI for Gemini -->
+	<!-- Removes any reference to DSTR IDs -->
 	<xsl:template match="*/gmd:identifier">
 		<xsl:variable name="URI2"><xsl:value-of select="./gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString"/></xsl:variable>	
 		<xsl:if test="not(contains($URI2,'DSTR'))">
