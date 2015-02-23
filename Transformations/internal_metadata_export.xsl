@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--	Trasformation for EAMP extended metadata to data.go.uk, anonymizing and removing information on the way out of GeoNetwork.
-	Some information has been swapped around so that it displays more pertinently on the data.gov.uk website, as the headings of
-	the elements on the display page are not Gemini compliant and a bit muddled.
-	Author:		Environment Agency
-	Date:		2015 02 20
-	Version:	1
+<!--	Trasformation for EAMP extended metadata to Gemini, anonymizing and removing information on the way out of GeoNetwork. 
+		Author:		Environment Agency
+		Date:		2015 02 20
+		Version:	1
 -->
 
 <xsl:stylesheet version="1.0" exclude-result-prefixes="eamp" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:eamp="http://environment.data.gov.uk/eamp" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -14,70 +12,19 @@
 	<!-- Add any nodes here that are not to be copied over. Separate with '|', a pipe. If node is a parent, children will not be copied either. -->
 	<xsl:template match="gmd:pointOfContact"/>
 	
-	<!-- Remove AfA element and switch around some info specific to data.gov.uk as requested by CJ, MG and WT -->
+	<!-- Remove AfA element -->
 	<xsl:template match="*/gmd:resourceConstraints">
 		<xsl:if test="not(./eamp:EA_Constraints)">
-			<xsl:for-each select="./gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString">
-				<xsl:if test="contains(.,'Data will be licensed')">
-					<gmd:resourceConstraints>
-						<gmd:MD_Constraints>
-							<gmd:useLimitation>
-								<gco:CharacterString><xsl:value-of select="."></xsl:value-of></gco:CharacterString>
-							</gmd:useLimitation>
-						</gmd:MD_Constraints>
-					</gmd:resourceConstraints>
-					<gmd:resourceConstraints>
-						<gmd:MD_LegalConstraints>
-							<gmd:accessConstraints>
-								<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" codeSpace="ISOTC211/19115">otherRestrictions</gmd:MD_RestrictionCode>
-							</gmd:accessConstraints>
-							<gmd:accessConstraints>
-								<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="license" codeSpace="ISOTC211/19115">license</gmd:MD_RestrictionCode>
-							</gmd:accessConstraints>
-							<gmd:accessConstraints>
-								<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="copyright" codeSpace="ISOTC211/19115">copyright</gmd:MD_RestrictionCode>
-							</gmd:accessConstraints>
-							<gmd:otherConstraints>
-								<gco:CharacterString>There are no public access constraints to this data. Use of this data is subject to the licence identified.</gco:CharacterString>
-							</gmd:otherConstraints>
-						</gmd:MD_LegalConstraints>
-					</gmd:resourceConstraints>								
-				</xsl:if>
-				<xsl:if test="contains(.,'Open Government Licence')">
-					<gmd:resourceConstraints>
-						<gmd:MD_Constraints>
-							<gmd:useLimitation>
-								<gco:CharacterString><xsl:value-of select="."></xsl:value-of></gco:CharacterString>
-							</gmd:useLimitation>
-						</gmd:MD_Constraints>
-					</gmd:resourceConstraints>
-					<gmd:resourceConstraints>
-						<gmd:MD_LegalConstraints>
-							<gmd:accessConstraints>
-								<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" codeSpace="ISOTC211/19115">otherRestrictions</gmd:MD_RestrictionCode>
-							</gmd:accessConstraints>
-							<gmd:accessConstraints>
-								<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="license" codeSpace="ISOTC211/19115">license</gmd:MD_RestrictionCode>
-							</gmd:accessConstraints>
-							<gmd:accessConstraints>
-								<gmd:MD_RestrictionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="copyright" codeSpace="ISOTC211/19115">copyright</gmd:MD_RestrictionCode>
-							</gmd:accessConstraints>
-							<gmd:otherConstraints>
-								<gco:CharacterString>There are no public access constraints to this data. Use of this data is subject to the licence identified.</gco:CharacterString>
-							</gmd:otherConstraints>
-						</gmd:MD_LegalConstraints>
-					</gmd:resourceConstraints>						
-				</xsl:if>
-			</xsl:for-each>
+			<gmd:resourceConstraints>
+				<xsl:apply-templates select="@* | node()"/>
+			</gmd:resourceConstraints>
 		</xsl:if>
-
 	</xsl:template>
 
 	<!-- Add generic Responsible Organisation contact after Abstract. All current ones are obliterated in the empty template above -->
 	<xsl:template match="*/gmd:abstract">
 	  <gmd:abstract>
-		<gco:CharacterString><xsl:value-of select="./gco:CharacterString"></xsl:value-of><xsl:text> Attribution statement: </xsl:text><xsl:for-each select="/gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gco:CharacterString">
-			<xsl:if test="contains(.,'copyright')"><xsl:value-of select="."></xsl:value-of><xsl:text> </xsl:text></xsl:if></xsl:for-each></gco:CharacterString>
+		<xsl:apply-templates select="@* | node()"/>
 	  </gmd:abstract>
 	  <gmd:pointOfContact>
 		<gmd:CI_ResponsibleParty>
@@ -137,7 +84,7 @@
 	  </gmd:contact>
 	</xsl:template>
 	
-	<!-- Removes any reference to DSTR IDs -->
+	<!-- Adds Published Doc Id from Esri to URI for Gemini -->
 	<xsl:template match="*/gmd:identifier">
 		<xsl:variable name="URI2"><xsl:value-of select="./gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString"/></xsl:variable>	
 		<xsl:if test="not(contains($URI2,'DSTR'))">
