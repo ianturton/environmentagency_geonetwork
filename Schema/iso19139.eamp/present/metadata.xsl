@@ -45,7 +45,7 @@
     <!-- iso19139 one is empty as well -->
     <xsl:template name="iso19139.eamp-javascript"/>
 
-    <xsl:template name="iso19139.eampBrief">
+    <xsl:template name="iso19139.eamp-brief">
         <metadata>
       <xsl:choose>
         <xsl:when test="geonet:info/isTemplate='s'">
@@ -78,6 +78,7 @@
 
     <xsl:template mode="iso19139" match="eamp:*[gco:CharacterString|gco:Integer]" priority="150">
         <xsl:param name="schema"/>
+         <xsl:param name="edit" select="false()"/>
 
         <xsl:call-template name="iso19139String">
             <xsl:with-param name="schema" select="$schema"/>
