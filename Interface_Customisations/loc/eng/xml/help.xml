@@ -3,54 +3,127 @@
 	<title>Help page</title>
 	<content>
 		<h3>Help</h3>
-		<p>For Frequently Asked Questions (FAQ's), Tutorials, Reference Manuals and other information on the use of GeoNetwork opensource, 
-			please refer to the <strong>Documentation</strong> center on <strong><a href="http://geonetwork-opensource.org" target="_blank">The GeoNetwork opensource Community website</a></strong></p>
-		<h3>Content of this page</h3>
+		<p>The content of this page is help for using Geonetwork. It is not intended as a help guide for editors or administrators. That can be found xxx.</p>
+		<br/>
+		<h3>Content of this page:</h3>
 		<p>
-			<a href="#1">Finding spatial data</a><br/>
-			<a href="#2">Spatial data and related applications</a><br/>
-			<a href="#3">Downloading spatial data</a>
-			<p/>
-			<a name="1"/><h3>Finding spatial data</h3>
-			The GeoNetwork search engine allows you to search on the following fields
+			<a href="#1">Finding data</a>
+			<br/>
+			<a href="#2">Simple search</a>
+			<br/>
+			<a href="#3">Advanced search</a>
+			<br/>
+			<a href="#4">Data themes</a>
+			<br/>
+			<a href="#5">Recently updated</a>
+			<br/>
+			<a href="#6">How to add metadata</a>
+			<br/>
+			<a href="#7">Sharing metadata records</a>
+			<br/>
+			<a href="#8">Exporting records</a>
+			<br/>
+			<a href="#9">Emailing the metadata link</a>
+			<br/>
+			<a href="#10">Permanent link to the record</a>
+			<br/>
+			<a href="#11">Deleting records</a>
+			<br/>
+			<a href="#12">Defenitions</a>
+			<br/>
+			<a href="#13">Show map</a>
+		</p>
+		<br/>
+		<h3>Content sections:</h3>
+		<a name="1"/>
+		<h1>Finding spatial data</h1>
+		<p>
+			<i>Metadata Catalogue</i> offers a simple and advanced search.</p>
+		<br/>
+		<a name="2"/>
+		<h1>Simple search</h1>
+		<p>The simple search allows you to search on the following fields:
 			<ul>
 				<li>Title</li>
 				<li>Abstract</li>
 				<li>Keywords</li>
 				<li>Location</li>
 				<li>Free text (any metadata field)</li>
+			</ul>	
+		Note - Keywords are not case sensitive.</p>
+		<br/>
+		<a name="3"/>
+		<h1>Advanced search</h1>
+		<p>What can you do here? How much detail do we want to go into?.</p>
+		<br/>
+		<a name="4"/>
+		<h1>Data themes</h1>
+		<p>The data themes section shows all records within an environmental theme. Every record sits in the most relevant theme. Records may sit under more than one theme.</p>
+		<br/>
+		<a name="5"/>
+		<h1>Recently updated</h1>
+		<p>The recently updated section shows the 10 most recently updated records. This could be a change to one field or to many.</p>
+		<br/>
+		<a name="6"/>
+		<h1>How to add metadata</h1>
+		<p>If you want to add a record to name of solution please email metadata@environment-agency.gov.uk
+		When we know who our editors are we can list them here and expand this section.</p>
+		<br/>
+		<a name="7"/>
+		<h1>Sharing metadata records</h1>
+		<p>Records can be saved and exported and links emailed and book-marked.<br/>
+		Note – these records contain personal information. Please do not share externally.</p>
+		<br/>
+		<a name="8"/>
+		<h1>Exporting records</h1>
+		<p>This functionality is for when you want to share or re-use a metadata record with others.
+
+		This can be done in numerous ways:
+		<ul>
+				<li>Save the file as ISO 19139 xml</li>
+				<li>Save the file as DublinCore xml</li>
+				<li>Save the record as a pdf</li>
 			</ul>
-			In each search fields the user can write expressions using the following grammar:
-			<ul>
-				<li>string: search metadata having "string"' in field</li>
-				<li>string1 string2: equivalent to string1 and string2</li>
-				<li>"string1 string2": search metadata having the "string1 string2" in field</li>
-				<li>string1 and string2: search metadata having both "string1" and "string2" in field</li>
-				<li>string1 or string2: search metadata having either 'string1' or "string2" in field</li>
-				<li>string1 not string2: search metadata having "string1" but not "string2" in field</li>
+		These can be done as individual records or by selecting many.<br/>
+		Select the record(s) you want to save and in ‘actions on selection’ choose one of the options.</p>
+		<br/>
+		<a name="9"/>
+		<h1>Emailing the metadata link</h1>
+		<p>Viewing a record – envelope icon on top left of record.
+		This functionality allows you to send an email with the metadata records unique ID.
+		Need more info as what the purpose of this is.</p>
+		<br/>
+		<a name="10"/>
+		<h1>Permanent link to the record</h1>
+		<p>Star icon on top left of record
+		This shows the metadata records full URL which includes the unique ID.
+		Need more info as what the purpose of this is.</p>
+		<br/>
+		<a name="11"/>
+		<h1>Deleting records</h1>
+		<p>Metadata records cannot be deleted. We keep all records for historic purposes.
+		There is the functionality for administrators to retire records but these would need good reason - define what this is or link to process/guidance.</p>
+		<br/>
+		<a name="12"/>
+		<h1>Definitions</h1>
+		<p>
+			Definitions of dataset, data series, data services, spatial and published. These are all terms within our metadata.<br/>
+			<ul><li>
+					<em>Dataset</em> - A dataset is a defined collection of digital data, typically a list or table of facts, which is held, extracted or formatted for a specific business purpose.</li>
+				<li>
+					<em>Data Series</em> - Data Collection of datasets sharing the same product specification</li>
+				<li>
+					<em>Data Services </em> - An interface that allows the delivery of the data via the Internet be it either a view, feature or invoke service.</li>
+				<li>
+					<em>Spatial</em> - A dataset that is spatially referenced and stored as a GIS or Geomatic file format such as .shp, .tab, WMS, ASCII etc.</li>
+				<li>
+					<em>Published</em> - A dataset that has been proactively disseminated and is available via a recognised Data Sharing Platform service and discoverable by metadata.</li>
 			</ul>
-			Keywords and operators (and, or not) are not case sensitive.
-			<p/>
-			For instance, in the title field:
-			<p/>
-			anchorage map: search for all metadata containing the words "anchorage" and "map" in the title;<br/>
-			"anchorage map": search for all metadata containing the text "anchorage map" in the title;<br/>
-			"anchorage map" not roads: search for all metadata containing the text "anchorage map" but not the word "roads" in the title.
-			<p/>
-			In the remote search the user can select multiple servers from the list; as an alternative, the user can select a profile; this automatically selects all servers defined for that profile. For instance, the GeoNetwork profile selects all GeoNetwork servers providing remote search capabilities.<br/>
-			Since remote Z39.50 transactions can be very slow, the user can define a timeout for the transaction of 10, 20 and 30 seconds.
-			<p/>
-			<a name="2"/><h3>Spatial data and related applications</h3>
-			<p/>
-			Spatial data that can be found in the GeoNetwork is often used as basic data in advanced web-based applications. These applications target specific problems related to agriculture, livestock, forests, fisheries and food security issues.<br/>
-			The user will be provided with links to these related applications.<br/>
-			Related applications will also allow the user to see what other spatial data makes part of the application.<br/>
-			Related applications can in some cases directly be viewed through the GeoNetwork Dynamic Map interface.
-			<p/>
-			<a name="3"/><h3>Downloading spatial data</h3>
-			Spatial data is often available for download. Data is provided in data formats that are compatible with most professional GIS applications and a variety of freeware GIS tools.<br/>
-			Downloadable data has a link to proceed for download. You will have to aggree with the download conditions and a disclaimer. You are asked to provide your personal details, and are kindly invited to provide us with feedback on your intended use of the data.<br/>
-			A number of datasets will allow you to only download an area of interest.
+		</p>
+		<br/>
+		<a name="13"/>
+		<h1>Show map</h1>
+		<p>This functionality isn’t fully enabled in this version and we recommend that you do not use it<br/>
 		</p>
 	</content>
 </help>
