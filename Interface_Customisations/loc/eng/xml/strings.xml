@@ -595,7 +595,7 @@
 	<longitude>Longitude (between -180 and 180) in degrees</longitude>
 	<longMax>long (max)</longMax>
 	<longMin>long (min)</longMin>
-	<mainpageTitle>Find Interactive Maps, GIS datasets, Satellite Imagery and Related Applications</mainpageTitle>
+	<mainpageTitle>Find Our Datasets</mainpageTitle>
 	<maintenanceTab>Maintenance</maintenanceTab>
 	<management>Management</management>
 	<mandatory>Mandatory</mandatory>
@@ -1059,18 +1059,21 @@
 		<meta name="DC.coverage" content="Global"/>
 	</header_meta>
 	<mainpage1>
-		<h1>GeoNetwork's purpose is:</h1>
-		<ul>
-			<li>To improve access to and integrated use of spatial data and information</li>
-			<li>To support decision making</li>
-			<li>To promote multidisciplinary approaches to sustainable development</li>
-			<li>To enhance understanding of the benefits of geographic information</li>
-		</ul>
+		<p>Metadata is data about data. We collect ‘discovery' metadata: at its simplest, the 'What, Who, Where, When and How' about data.<br/><br/>
+		The Environment Agency's discovery metadata lets you find specific information about the datasets that we own or hold.<br/>
+		The purpose of Metadata Catalogue is:
+			<ul>
+				<li>To allow you to discover our spatial and non-spatial data</li>
+				<li>To improve access to spatial and non-spatial data</li>
+				<li>To provide you with a comprehensive catalogue of our data</li>
+				<li>To provide you with information about the data such as its name, a description about it, what format the data is available in, who is accountable for it and where the data is held.</li>
+				<li>To support decision making</li>
+			</ul>
+		</p>
 	</mainpage1>
 	<mainpage2>
 		<p>
-		GeoNetwork opensource allows to easily share geographically referenced thematic
-		information between different organizations. For more information please contact
+		For help or more information please contact:
 		</p>
 	</mainpage2>
 	<mainhelp1> How to search... </mainhelp1>

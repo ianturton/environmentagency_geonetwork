@@ -87,7 +87,8 @@
                         </a>
                     </xsl:if>
                     |
-                    <xsl:choose>
+					<!-- EAMP removed "about" section -->
+                    <!--<xsl:choose>
                         <xsl:when test="/root/gui/reqService='about'">
                             <font class="banner-active"><xsl:value-of select="/root/gui/strings/about"/></font>
                         </xsl:when>
@@ -95,7 +96,7 @@
                             <a class="banner" onclick="doBannerButton('{/root/gui/locService}/about','{/root/gui/strings/about}','{$modal}',800)" href="javascript:void(0);"><xsl:value-of select="/root/gui/strings/about"/></a>
                         </xsl:otherwise>
                     </xsl:choose>
-                    |
+                    |-->
                     <!-- Help section to be displayed according to GUI language
                     <xsl:choose>
                         <xsl:when test="java:file-exists(concat(resolve-uri('../', replace(static-base-uri(), 'file:', '')), 'docs/', /root/gui/language, '/users/index.html'))">
