@@ -3011,10 +3011,10 @@
     </element>
     <!-- Entries for EA -->
     <element name="eamp:EA_Metadata">
-		<label>Extension for EA that captures internal information</label>
+		<label>EA specific metadata</label>
     </element>
     <element name="eamp:EA_Constraints">
-		<label>Extension for EA afa element that captures afa information</label>
+		<label>EA Constraints Information</label>
     </element>
     <element name="eamp:EA_Afa">
 		<label>Main parent element for AfA sub-elements</label>
