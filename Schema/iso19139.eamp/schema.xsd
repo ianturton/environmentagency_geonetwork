@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema targetNamespace="http://bluenet3.antcrc.utas.edu.au/mcp" elementFormDefault="qualified"
+<xs:schema targetNamespace="http://environment.data.gov.uk/eamp" elementFormDefault="qualified"
 			  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
 			  xmlns:eamp="http://environment.data.gov.uk/eamp"
 			  xmlns:gmd="http://www.isotc211.org/2005/gmd"
