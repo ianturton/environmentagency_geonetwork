@@ -3022,7 +3022,7 @@
     <element name="eamp:EA_AfaStatus">
 		<label>AfA Status</label>
     </element>
-    <element name="eamp:afaNumber">
+    <element name="gco:Decimal" context="eamp:afaNumber">
 		<label>AfA Number</label>
     </element>
 </labels>
