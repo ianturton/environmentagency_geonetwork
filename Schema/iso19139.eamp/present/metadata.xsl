@@ -108,6 +108,20 @@
     </xsl:call-template>
   </xsl:template>
 
+  <!-- ===================================================================== -->
+  <!-- these elements should be boxed -->
+  <!-- ===================================================================== -->
+
+  <xsl:template mode="iso19139" match="gmd:identificationInfo|gmd:distributionInfo|gmd:descriptiveKeywords|gmd:thesaurusName|gmd:spatialRepresentationInfo|gmd:pointOfContact|gmd:dataQualityInfo|gmd:referenceSystemInfo|gmd:equivalentScale|gmd:projection|gmd:ellipsoid|gmd:extent[name(..)!='gmd:EX_TemporalExtent']|gmd:geographicBox|gmd:EX_TemporalExtent|gmd:MD_Distributor|srv:containsOperations|srv:SV_CoupledResource|gmd:metadataConstraints|gmd:accesConstraints">
+    <xsl:param name="schema"/>
+    <xsl:param name="edit"/>
+    
+    <xsl:apply-templates mode="complexElement" select=".">
+      <xsl:with-param name="schema" select="$schema"/>
+      <xsl:with-param name="edit"   select="$edit"/>
+    </xsl:apply-templates>
+  </xsl:template>
+
   <xsl:template name="iso19139GetIsoLanguage_eamp">
     <xsl:param name="schema"/>
     <xsl:param name="edit"/>
