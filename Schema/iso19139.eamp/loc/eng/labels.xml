@@ -3020,6 +3020,9 @@
 		<label>Main parent element for AfA sub-elements</label>
     </element>
     <element name="eamp:EA_AfaStatus">
-		<label>Enumerates the AfA status</label>
+		<label>AfA Status</label>
+    </element>
+    <element name="eamp:afaNumber">
+		<label>AfA Number</label>
     </element>
 </labels>
