@@ -11,7 +11,7 @@
 	<xs:import namespace="http://www.isotc211.org/2005/gmd" schemaLocation="../gmd/gmd.xsd"/>
 	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
 	<xs:import namespace="http://www.isotc211.org/2005/srv" schemaLocation="../srv/srv.xsd"/>
-	<xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="../gml/gml.xsd"/>
+	<xs:import namespace="http://www.opengis.net/gml" schemaLocation="../gml/gml.xsd"/>
 
 	<!-- =========================================================================== -->
 <!--	<xs:complexType name="EA_Metadata_Type">
