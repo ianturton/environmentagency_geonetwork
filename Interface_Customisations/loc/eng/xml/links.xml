@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<links>
+	<title>Links page</title>
+	<content>
+		<h3>Internal links:</h3>
+		<h1>Easinet</h1>
+		<a target="_blank" href="http://intranet.ea.gov/knowledge/data/29816.aspx">This Easinet page explains what Metadata Catalogue does.</a>
+		<br/>
+		<h1>Easimap 2</h1>
+		<a target="_blank" href="http://easimap/Silverlight/Viewer.html?Viewer=incidents">Easimap provides a simple, easy to use map interface to find, view and query geographic information. It is available to every member of staff. </a>
+		<br/>
+		<h1>Metadata decision tree</h1>
+		<a target="_blank" href="http://www./">We only record metadata for datasets in Metadata Catalogue. This document is to help you determine whether your information needs a record.</a>
+		<br/>
+		<br/>
+		<h3>External links:</h3>
+		<h1>Geonetwork user manual</h1>
+		<a target="_blank" href="http://geonetwork-opensource.org/manuals/2.10.4/eng/users/index.html/">The GeoNetwork User Manual v2.10.3. The manual is a guide describing how to use the metadata catalog.</a>
+		<br/>
+		<h1>Data.gov.uk</h1>
+		<a target="_blank" href="http://data.gov.uk/ /">data.gov.uk is a UK Government project to make available non-personal UK government data as open data. Metadata for our open data are on here.</a>
+		<br/>		
+		<h1>Gemini 2.2</h1>
+		<a target="_blank" href="http://www.agi.org.uk/join-us/agi-groups/standards-committee/uk-gemini /"> Version 2.2 of UK GEMINI2 metadata standard.</a><br/>
+		<p/>
+	</content>
+</links>
