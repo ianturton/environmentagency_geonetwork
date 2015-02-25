@@ -45,20 +45,9 @@
     <!-- iso19139 one is empty as well -->
     <xsl:template name="iso19139.eamp-javascript"/>
 
-    <xsl:template name="iso19139.eamp-brief">
-        <metadata>
-      <xsl:choose>
-        <xsl:when test="geonet:info/isTemplate='s'">
-          <xsl:apply-templates mode="iso19139-subtemplate" select="."/>
-          <xsl:copy-of select="geonet:info" copy-namespaces="no"/>
-        </xsl:when>
-        <xsl:otherwise>
-          <xsl:call-template name="iso19139-brief"/>
-          <!-- now brief elements for mcp specific elements -->
-        <xsl:call-template name="iso19139.eamp-brief"/>
-        </xsl:otherwise>
-      </xsl:choose>
-    </metadata>
+    <xsl:template name="iso19139.eampBrief">
+       <!-- Let the original ISO19139 templates do the work -->
+        <xsl:call-template name="iso19139Brief"/>
     </xsl:template>
 
 
