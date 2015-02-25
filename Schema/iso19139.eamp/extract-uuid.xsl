@@ -5,7 +5,7 @@
 						xmlns:gmd="http://www.isotc211.org/2005/gmd"
 						xmlns:eamp="http://environment.data.gov.uk/eamp">
 
-	<xsl:template match="eamp:EA_Metadata">
+	<xsl:template match="eamp:EA_Metadata|gmd:MD_Metadata|*[@gco:isoType='gmd:MD_Metadata']">
 		 <uuid><xsl:value-of select="gmd:fileIdentifier/gco:CharacterString"/></uuid>
 	</xsl:template>
 
