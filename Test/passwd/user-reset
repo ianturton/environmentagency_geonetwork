@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>user-reset</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">user-reset</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/geonetwork/srv/eng/main.home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>auto_test_user</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Foobarcar1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.banner</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Change password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>Foobarcar1</td>
+</tr>
+<!-- Too short -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>aaaaaaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must be at least 8 characters long</td>
+	<td></td>
+</tr>
+<!-- Not complex enough -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>password1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must contain one upper case, one lower case and one numeric character.</td>
+	<td></td>
+</tr>
+<!-- Contains repeated characters -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>Paaasword1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain repeated characters</td>
+	<td></td>
+</tr>
+<!-- Contain sequences -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>Password1abc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain sequences such as 123, abc</td>
+	<td></td>
+</tr>
+<!-- Just right but must enter it twice (confirm that default validation is
+     being done) -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>Foobarcar1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Please enter your password twice.</td>
+	<td></td>
+</tr>
+<!-- Enter password twice and move on -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword2</td>
+	<td>Foobarcar1</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content_container']/table/tbody/tr[3]/td[3]</td>
+	<td>Your password has been successfully changed</td>
+</tr>
+<!-- Logout -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.banner</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
