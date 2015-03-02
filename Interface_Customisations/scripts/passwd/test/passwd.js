@@ -72,6 +72,7 @@ describe('passwd', function() {
             expect(passwd.containsSequence('123')).to.be(true);
             expect(passwd.containsSequence('789')).to.be(true);
             expect(passwd.containsSequence('345')).to.be(true);
+            expect(passwd.containsSequence('Testuser3')).to.be(true); // Contains "stu"
             expect(passwd.containsSequence('ab')).to.be(false);
             expect(passwd.containsSequence('yz')).to.be(false);
             expect(passwd.containsSequence('foobar')).to.be(false);
