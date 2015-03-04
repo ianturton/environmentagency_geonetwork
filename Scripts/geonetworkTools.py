@@ -14,9 +14,9 @@ from lxml import etree
 import sys
 
 # GeoNetwork constants
-gn_username = "admin"
-gn_password = "definitelynotadmin"
-gn_baseURL = "http://ea.astuntechnology.com:8080/geonetwork"
+gn_username = "yourusername"
+gn_password = "yourpassword"
+gn_baseURL = "http://URL:8080/geonetwork"
 #gn_cswURI = gn_baseURL + "/srv/en/csw"
 loginservice='j_spring_security_check'
 
