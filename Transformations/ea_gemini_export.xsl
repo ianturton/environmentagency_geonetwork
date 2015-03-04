@@ -84,7 +84,7 @@
 	  </gmd:contact>
 	</xsl:template>
 	
-	<!-- Adds Published Doc Id from Esri to URI for Gemini -->
+	<!-- Removes any reference to DSTR IDs -->
 	<xsl:template match="*/gmd:identifier">
 		<xsl:variable name="URI2"><xsl:value-of select="./gmd:identifier/gmd:MD_Identifier/gmd:code/gco:CharacterString"/></xsl:variable>	
 		<xsl:if test="not(contains($URI2,'DSTR'))">
@@ -92,6 +92,29 @@
 				<xsl:apply-templates select="@* | node()"/>
 			</gmd:identifier>
 		</xsl:if>
+	</xsl:template>
+	
+	<!-- Remove excess bits in the data format element if there -->
+	<xsl:template match="*/gmd:distributionFormat">
+		<xsl:variable name="format"><xsl:value-of select="./gmd:MD_Format/gmd:name/gco:CharacterString"/></xsl:variable>
+		<xsl:variable name="version"><xsl:value-of select="./gmd:MD_Format/gmd:version/gco:CharacterString"/></xsl:variable>
+		  <xsl:if test="contains($format,'|')">
+			  <gmd:distributionFormat>
+				<gmd:MD_Format>
+				  <gmd:name>
+					<gco:CharacterString><xsl:value-of select="normalize-space(substring-after($format, '|'))"/></gco:CharacterString>
+				  </gmd:name>
+				  <gmd:version>
+					<gco:CharacterString><xsl:value-of select="$version"/></gco:CharacterString>
+				  </gmd:version>
+				</gmd:MD_Format>
+			  </gmd:distributionFormat>
+			</xsl:if>
+			<xsl:if test="not(contains($format,'|'))">
+				<gmd:distributionFormat>
+					<xsl:apply-templates select="@* | node()"/>
+				</gmd:distributionFormat>
+			</xsl:if>
 	</xsl:template>
 	
 	<!-- Remove internal Resource Locators -->
@@ -132,7 +155,7 @@
 		</gmd:metadataStandardVersion>
 	</xsl:template>
 
-		<!-- Change EAMP schema location to gemini version -->
+	<!-- Change EAMP schema location to gemini version -->
 	<xsl:template match="/*">
 		<xsl:element name="{name()}" namespace="{namespace-uri()}">
 			<xsl:copy-of select="namespace::*[name()]"/>
@@ -142,7 +165,21 @@
 				</xsl:attribute>
 			<xsl:apply-templates select="node()"/>
 		</xsl:element>
-	</xsl:template>	
+	</xsl:template>
+	
+	<!-- this does some stuff -->	
+	<xsl:template match="/gmd:MD_Metadata">
+		<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+		xmlns:gco="http://www.isotc211.org/2005/gco" 
+		xmlns:gml="http://www.opengis.net/gml/3.2" 
+		xmlns:srv="http://www.isotc211.org/2005/srv" 
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:gmx="http://www.isotc211.org/2005/gmx"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.isotc211.org/2005/gmx http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd">		
+		<xsl:apply-templates select="@* | node()"/>
+		</gmd:MD_Metadata>
+	</xsl:template>
 	
 	<!-- copy All -->
 	<xsl:template match="@* | node()">
