@@ -26,6 +26,7 @@
 
             <!-- title header-centre.jpg-->
             <tr class="banner">
+				<!-- EAMP added width -->
                 <td class="banner" width="400px">
                     <img src="{/root/gui/url}/images/header-left.jpg" alt="World picture" align="top" />
                 </td>
