@@ -24,20 +24,24 @@
 
         <table width="100%">
 
-            <!-- title -->
+            <!-- title header-centre.jpg-->
             <tr class="banner">
-                <td class="banner">
+                <td class="banner" width="400px">
                     <img src="{/root/gui/url}/images/header-left.jpg" alt="World picture" align="top" />
                 </td>
-                <td align="right" class="banner">
+				<!-- EAMP added name of application -->
+				<td align="center" class="banner">
+					<img src="{/root/gui/url}/images/header-centre.jpg" alt="Metadata Catalogue" align="top" />
+				</td>
+                <td align="right" class="banner" width="380px">
                     <img src="{/root/gui/url}/images/header-right.gif" alt="GeoNetwork opensource logo" align="top" />
                 </td>
             </tr>
 
             <!-- buttons -->
             <tr class="banner">
-				<!-- EAMP changed width from 380px to 550px-->
-				<td class="banner-menu" width="550px">
+				<!-- EAMP changed width from 380px to 400px (was 550px JT) for centre jpg-->
+				<td class="banner-menu" width="400px">
                     <a class="banner" href="{/root/gui/locService}/home"><xsl:value-of select="/root/gui/strings/home"/></a>
                     |
                     <xsl:if test="$modal">
@@ -87,7 +91,7 @@
                         </a>
                     </xsl:if>
                     |
-					<!-- EAMP removed "about" section -->
+					<!-- EAMP removed "about" and old "Help" section -->
                     <!--<xsl:choose>
                         <xsl:when test="/root/gui/reqService='about'">
                             <font class="banner-active"><xsl:value-of select="/root/gui/strings/about"/></font>
@@ -133,6 +137,10 @@
                     <a class="banner" href="{/root/gui/service}/es/main.present">Last search results (11-20 of 73)<xsl:value-of select="/root/gui/strings/results"/></a>
                     -->
                 <!-- </td> -->
+				
+				<!-- EAMP added empty middle cell because of centre jpg above. -->
+				<td class="banner"/>
+				
                 <xsl:choose>
                     <xsl:when test="string(/root/gui/session/userId)!=''">
                         <td align="right" class="banner-login">
