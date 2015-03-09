@@ -9,11 +9,17 @@
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:geonet="http://www.fao.org/geonetwork"
-                xsi:schemaLocation="http://www.isotc211.org/2005/gmd
+                xsi:schemaLocation="http://www.isotc211.org/2005/gmx 
+                                                http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd"
+                exclude-result-prefixes="geonet">
+
+               <!--  xsi:schemaLocation="http://www.isotc211.org/2005/gmd
                                                 http://www.isotc211.org/2005/gmd/gmd.xsd
                                                 http://www.isotc211.org/2005/gmx 
                                                 http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd"
-                exclude-result-prefixes="geonet">
+                exclude-result-prefixes="geonet"> -->
+
+
                 
    
 	<!-- <xsl:template match="gmd:MD_Metadata" priority="100">
