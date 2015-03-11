@@ -13,7 +13,6 @@
     <sch:ns prefix="geonet" uri="http://www.fao.org/geonetwork"/>
     <sch:ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>
 
-    <sch:let name="langCodeList">eng;cym;gle;gla;cor;sco</sch:let>
 
     <!--METADATA STANDARD-->
     <sch:pattern>
@@ -83,7 +82,7 @@
             <sch:assert test="count(gmd:individualName)!=1 and count(gmd:organisationName)!=1 and count(gmd:positionName) !=1 and count(gmd:role) !=1">Each Point of Contact must contain one Individual Name, one Position Name, one Organisation Name and 1 role</sch:assert>
             <sch:report test="true()">Exactly one Individual Name, one Position Name, one Organisation Name and 1 role have been provided for each Point of Contact</sch:report>
         </sch:rule>
-    <sch:pattern>
+    </sch:pattern>
 
     <sch:pattern>
         <sch:title>EAMP-mi4-Custodian</sch:title>
