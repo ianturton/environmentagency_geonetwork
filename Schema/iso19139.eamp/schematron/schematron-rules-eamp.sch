@@ -37,6 +37,7 @@
         <sch:title>EAMP-mi1-NotNillable</sch:title>
         <sch:rule context="/*[1]/gmd:distributionInfo[1]/*[1]/gmd:MD_Distribution/gmd:distributionFormat[1]">
             <sch:assert test="string-length(.)>0">At least one DistributionFormat must be provided</sch:assert>
+            <sch:report test="true()">At least one DistributionFormat has been provided</sch:report>
         </sch:rule>
     </sch:pattern>
 
@@ -55,6 +56,7 @@
             ../eamp@afaStatus/eamp:EA_AfaStatus = 'afaPublicationScheme' or
             ../eamp@afaStatus/eamp:EA_AfaStatus = 'afaInformationRequestsOnly') and
             string-length(.)=0)">AfANumber is mandatory for records with status notAfaToBeAssessedWithGuidance, afaPubSchemeAndInfoForReuseReg, afaPublicRegister, afaPublicationScheme or afaInformationRequestsOnly</sch:assert>
+            <sch:report test="true()">AfANumber is applicable and has been provided</sch:report>
         </sch:rule>
     </sch:pattern>
 
@@ -65,6 +67,7 @@
             <sch:assert test="((../eamp@afaStatus/eamp:EA_AfaStatus = 'notAfaToBeAssessed or 
             ../eamp@afaStatus/eamp:EA_AfaStatus = 'notApplicableThirdpartyDataset') and
             string-length(.)>0)">AfANumber is not applicable for records with status notAfaToBeAssessed or notApplicableThirdpartyDataset</sch:assert>
+            <sch:report test="true()">AfANumber is not applicable and has not been provided</sch:report>
         </sch:rule>
     </sch:pattern>
 
@@ -75,8 +78,36 @@
     </sch:pattern>
 
     <sch:pattern>
-    <sch:title>EAMP-mi3-Custodian</sch:title>
-    <sch:rule context="/*[1]/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact">
-        <sch:assert test=""
+        <sch:title>EAMP-mi3-GeneralContact</sch:title>
+        <sch:rule context="/*[1]/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty">
+            <sch:assert test="count(gmd:individualName)!=1 and count(gmd:organisationName)!=1 and count(gmd:positionName) !=1 and count(gmd:role) !=1">Each Point of Contact must contain one Individual Name, one Position Name, one Organisation Name and 1 role</sch:assert>
+            <sch:report test="true()">Exactly one Individual Name, one Position Name, one Organisation Name and 1 role have been provided for each Point of Contact</sch:report>
+        </sch:rule>
+    <sch:pattern>
+
+    <sch:pattern>
+        <sch:title>EAMP-mi4-Custodian</sch:title>
+         <sch:rule context="/*[1]/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/">
+         <sch:assert test="((gmd:CI_ResponsibleParty/gmd:role='Custodian') and count(.)=2)">Each dataset must have exactly two points of contact with the role "Custodian"</sch:assert>
+         <sch:report test="true()">Exactly two points of contact with the role "Custodian" have been supplied</sch:report>
+         </sch:rule>
+     </sch:pattern>
+
+
+     <sch:pattern>
+         <sch:title>EAMP-mi5-owner</sch:title>
+          <sch:rule context="/*[1]/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/">
+          <sch:assert test="((gmd:CI_ResponsibleParty/gmd:role='Owner') and count(.)=1)">Each dataset must have exactly one point of contact with the role "Owner"</sch:assert>
+          <sch:report test="true()">Exactly one point of contact with the role "Owner" has been supplied</sch:report>
+          </sch:rule>
+      </sch:pattern>
+
+      <sch:pattern>
+         <sch:title>EAMP-mi6-pointofcontact</sch:title>
+          <sch:rule context="/*[1]/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/">
+          <sch:assert test="((gmd:CI_ResponsibleParty/gmd:role='Point of Contact') and count(.)=1)">Each dataset must have exactly one point of contact with the role "Point of Contact"</sch:assert>
+          <sch:report test="true()">Exactly one point of contact with the role "Point of Contact" has been supplied</sch:report>
+          </sch:rule>
+      </sch:pattern>
 
 </sch:schema>
