@@ -32,6 +32,7 @@
 	<xsl:template name="geoCssHeader">
 		<link rel="stylesheet" type="text/css" href="{/root/gui/url}/scripts/ext/resources/css/ext-all.css"/>
 		<link rel="stylesheet" type="text/css" href="{/root/gui/url}/scripts/ext/resources/css/xtheme-slate.css"/>
+		<link rel="stylesheet" type="text/css" href="{/root/gui/url}/scripts/ext/resources/css/xtheme-slate_custom.css"/>
 		<link rel="stylesheet" type="text/css" href="{/root/gui/url}/scripts/ext/resources/css/file-upload.css"/>
 		<link rel="stylesheet" type="text/css" href="{/root/gui/url}/scripts/openlayers/theme/geonetwork/style.css"/>
 		<link rel="stylesheet" type="text/css" href="{/root/gui/url}/scripts/openlayers/theme/default/style.css"/>
