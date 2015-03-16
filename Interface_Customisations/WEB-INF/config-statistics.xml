@@ -215,7 +215,7 @@
                     <!-- currently the only supported value, (required)  -->
                     <param name="exportType" value="CSV"/>
                     <!-- The CSV separator (required)  -->
-                    <param name="csvSeparator" value=";"/>
+                    <param name="csvSeparator" value=","/>
                     <!-- True to write columns (header) informations at the beginning of the file (required),
                          false to dump only data -->
                     <param name="dumpHeader" value="true"/>
