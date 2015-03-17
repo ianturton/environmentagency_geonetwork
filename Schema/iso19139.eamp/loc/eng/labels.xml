@@ -3025,4 +3025,8 @@
     <element name="gco:Decimal" context="eamp:afaNumber">
 		<label>AfA Number</label>
     </element>
+    <element name="gmd:MD_RestrictionCode">
+    	<label>Restriction Code</label>
+    </element>
+
 </labels>
