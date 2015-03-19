@@ -79,16 +79,16 @@
             organization</description>
 		<_condition>Use obligation/condition from referencing object</_condition>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:CI_Date" id="393.0">
 		<label>Date</label>
 		<description>Reference date and event used to describe it (YYYY-MM-DD)</description>
+		<!--<description>Date in which the data resource was created or revised (updated).</description>-->
 		<_condition>Use obligation/condition from referencing object</_condition>
 	</element>
 	<element name="gmd:CI_OnlineResource" id="396.0">
 		<label>OnLine resource</label>
-		<description>Information about on-line sources from which the dataset, specification, or
-            community profile name and extended metadata elements can be obtained</description>
-		<_condition>Use obligation/condition from referencing object</_condition>
+		<description>The URL for where the data is published, or where there is information about the resource, or the file path for the data</description>
 	</element>
 	<element name="gmd:CI_ResponsibleParty" id="374.0">
 		<label>Responsible party</label>
@@ -205,9 +205,10 @@
 		<label>Extent</label>
 		<description>Information about spatial, vertical, and temporal extent</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:EX_GeographicBoundingBox" id="343.0">
 		<label>Geographic bounding box</label>
-		<description>Geographic position of the dataset</description>
+		<description>Rectangle enclosing the area the data resource covers. Only approximate values are required, sufficient to identify the extent on a global basis, eg England and Wales</description>
 	</element>
 	<element name="gmd:EX_GeographicDescription" id="348.0">
 		<label>Geographic description</label>
@@ -438,9 +439,11 @@
 		<label>URL</label>
 		<description>URL</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:abstract" id="25.0">
 		<label>Abstract</label>
-		<description>Brief narrative summary of the content of the resource(s)</description>
+		<description>Clear statement about content of the data resource. 
+If  the data has been through the Approval for Access process the abstract from there is used.</description>
 		<condition>mandatory</condition>
 	</element>
 	<element name="gmd:accessConstraints" id="70.0">
@@ -475,10 +478,10 @@
 		<label>Aggregation Information</label>
 		<description>Provides aggregate dataset information</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:alternateTitle" id="361.0">
 		<label>Alternate title</label>
-		<description>Short name or other language name by which the cited information is known.
-            Example: "DCW" as an alternative title for "Digital Chart of the World</description>
+		<description>Other name by which the data resource may be known. This is used when the data resource is known by something other than the official title, such as a previous title,  has more than one title, or has a title in another language.</description>
 	</element>
 	<element name="gmd:amendmentNumber" id="287.0">
 		<label>Amendment number</label>
@@ -883,9 +886,10 @@
 		<label>Description</label>
 		<description>Role description</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:descriptiveKeywords" id="33.0">
 		<label>Descriptive keywords</label>
-		<description>Provides category keywords, their type, and reference source</description>
+		<description>Words used to describe the content of the data resource</description>
 	</element>
 	<element name="gmd:descriptor" id="258.0">
 		<label>Descriptor</label>
@@ -983,10 +987,10 @@
 		<label>Edition date</label>
 		<description>Date of the edition (YYYY-MM-DD)</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:electronicMailAddress" id="386.0">
-		<label>Electronic mail address</label>
-		<description>Address of the electronic mailbox of the responsible organization or
-            individual</description>
+		<label>Email address</label>
+		<description>Email address for the individual or team</description>
 	</element>
 	<element name="gmd:environmentDescription" id="44.0">
 		<label>Environment description</label>
@@ -1230,10 +1234,10 @@
             dataset</description>
 		<condition>mandatory</condition>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:individualName" id="375.0">
 		<label>Individual name</label>
-		<description>Name of the responsible person- surname, given name, title separated by a
-            delimiter</description>
+		<description>Name of the individual, written as per the staff directory on Easinet.</description>
 		<_condition>Conditional / organisationName and positionName not documented?</_condition>
 	</element>
 	<element name="gmd:initiativeType" id="66.5">
@@ -1294,10 +1298,10 @@
             or similar addressing scheme such as http://www.statkart.no/isotc211</description>
 		<condition>mandatory</condition>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:maintenanceAndUpdateFrequency" id="143.0">
 		<label>Maintenance and update frequency</label>
-		<description>Frequency with which changes and additions are made to the resource after the
-            initial resource is completed</description>
+		<description>Frequency with which changes and additions are made to the resource</description>
 		<condition>mandatory</condition>
 	</element>
 	<element name="gmd:maintenanceNote" id="148.0">
@@ -1380,10 +1384,11 @@
 		<description>Name of reference system used</description>
 		<condition>mandatory</condition>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:name" context="gmd:MD_Format" id="285.0">
 		<label>Name</label>
-		<description>Name of the data transfer format(s)</description>
-		<help>name of the data transfer format(s)</help>
+		<description>Name of the data distribution format(s)</description>
+		<help>Data should be available in at least one Open format</help>
 		<condition>mandatory</condition>
 		<helper rel="gmd:version">
 			<option value="Text">Text</option>
@@ -1766,9 +1771,10 @@
 		<description>General instructions, terms and services provided by the
             distributor</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:organisationName" id="376.0">
 		<label>Organisation name</label>
-		<description>Name of the responsible organization</description>
+		<description>Name of the organisation the individual works for - usually 'Environment Agency'</description>
 		<condition>conditional</condition>
 	</element>
 	<element name="gmd:orientationParameterAvailability" id="172.0">
@@ -1862,9 +1868,10 @@
 		<description>Provides information about the catalogue of rules defined for the portrayal of
             a resource(s)</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:positionName" id="377.0">
 		<label>Position name</label>
-		<description>Role or position of the responsible person</description>
+		<description>Role of the individual, written as per the staff directory on Easinet</description>
 		<condition>conditional</condition>
 	</element>
 	<element name="gmd:postalCode" id="384.0">
@@ -2042,9 +2049,14 @@
 		<label>Role</label>
 		<description>Reference to the ends (roles) of a concrete association</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:role" id="379.0">
 		<label>Role</label>
-		<description>Function performed by the responsible party</description>
+		<description>The role of the individual associated with the data.
+Custodian: The Executive custodian responsible for the resource 
+Custodian: The National custodian responsible for the resource 
+Point of contact: The technical lead for the data
+Owner - The owner of the data</description>
 		<condition>mandatory</condition>
 	</element>
 	<element name="gmd:rule" id="317.0">
@@ -2171,19 +2183,20 @@
 	<element name="gmd:specification">
 		<label>Specification</label>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:statement" id="83.0">
-		<label>Statement</label>
-		<description>General explanation of the data producer_s knowledge about the lineage of a
-            dataset</description>
+		<label>Lineage Statement</label>
+		<description>General explanation about how the dataset was created and any other resources used</description>
 		<condition>conditional</condition>
 	</element>
 	<element name="gmd:status" id="28.0">
 		<label>Status</label>
 		<description>Status of the resource(s)</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:supplementalInformation" id="46.0">
 		<label>Supplemental Information</label>
-		<description>Any other descriptive information about the dataset</description>
+		<description>Other descriptive information or supporting information on the data resource. For example, a URL for a web resource providing information on the data.</description>
 	</element>
 	<element name="gmd:temporalElement" id="337.0">
 		<label>Temporal element</label>
@@ -2212,9 +2225,10 @@
 		<label>Tone gradation</label>
 		<description>Number of discrete numerical values in the grid data</description>
 	</element>
+	<!--EAMP-->
 	<element name="gmd:topicCategory" id="41.0">
 		<label>Topic category</label>
-		<description>Main theme(s) of the datset</description>
+		<description>ISO topic(s) that are relevant to the data resource</description>
 		<condition>mandatory</condition>
 	</element>
 	<element name="gmd:MD_TopicCategoryCode">
@@ -2390,64 +2404,55 @@
             longitude in decimal degrees (positive east)</description>
 		<condition>mandatory</condition>
 	</element>
+	<!--EAMP-->
 	<element name="gml:beginPosition">
 		<label>Begin date</label>
-		<description>Formatted as 2007-09-12T15:00:00 (YYYY-MM-DDTHH:mm:ss)</description>
+		<description>Start date covered by the data resource. Formatted as YY-MM-DD</description>
 	</element>
-
+	<!--EAMP-->
 	<element name="gml:endPosition">
 		<label>End date</label>
-		<description>Formatted as 2007-09-12T15:00:00 (YYYY-MM-DDTHH:mm:ss)</description>
+		<description>End date covered by the data resource. Formatted as YY-MM-DD. This is left blank if the data is ongoing/added to frequently</description>
 	</element>
-
 	<element name="gml:relatedTime">
 		<label>Related time</label>
 		<description>Defines the relation of a given time to the object.</description>
 	</element>
-
 	<element name="gml:coordinates">
 		<label>Coordinates</label>
 		<description>Used to record an array of tuples or coordinates.</description>
 	</element>
-
 	<element name="gml:Polygon">
 		<label>Polygon</label>
 		<description>A gml:Polygon is a special surface that is defined by a single surface patch.
             The boundary of this patch is coplanar and the polygon uses planar interpolation in its
             interior.</description>
 	</element>
-
 	<element name="gml:Point">
 		<label>Point</label>
 		<description>A gml:Point is defined by a single coordinate tuple.</description>
 		<example>74. -37.</example>
 	</element>
-
 	<element name="gml:LineString">
 		<label>Line</label>
 		<description>A gml:LineString is a special curve that consists of a single segment with
             linear interpolation. It is defined by two or more coordinate tuples, with linear
             interpolation between them.</description>
 	</element>
-
 	<element name="gml:LinearRing">
 		<label>Linear ring</label>
 		<description>A gml:LinearRing is defined by four or more coordinate tuples, with linear
             interpolation between them; the first and last coordinates shall be
             coincident.</description>
 	</element>
-
 	<element name="gml:exterior">
 		<label>Outer boundary</label>
 		<description>The outer boundary of a solid.</description>
 	</element>
-
 	<element name="gml:interior">
 		<label>Inner boundary</label>
 		<description>The inner boundary of a solid</description>
 	</element>
-
-
 	<element name="gml:begin">
 		<label>Begin</label>
 		<description />
@@ -2553,8 +2558,6 @@
 		<label>Factor</label>
 		<description></description>
 	</element>
-
-
 
 	<element name="srv:SV_ServiceIdentification">
 		<label>Service Identification (19119)</label>
@@ -3015,18 +3018,22 @@
     </element>
     <element name="eamp:EA_Constraints">
 		<label>EA Constraints Information</label>
+		<description>AfA Information</description>
     </element>
     <element name="eamp:EA_Afa">
 		<label>Main parent element for AfA sub-elements</label>
     </element>
     <element name="eamp:EA_AfaStatus">
 		<label>AfA Status</label>
+		<description>The Approval for Access (AfA) status assigned to the data or the third party status.</description>
+		<help>The AfA status assigned to the data or the third party status</help>
+		<condition>Mandatory</condition>
     </element>
     <element name="gco:Decimal" context="eamp:afaNumber">
 		<label>AfA Number</label>
+		<description>The official Approval for Access (AfA) number of the data if assigned during the AfA process.</description>
     </element>
-    <element name="gmd:MD_RestrictionCode">
+	<element name="gmd:MD_RestrictionCode">
     	<label>Restriction Code</label>
     </element>
-
 </labels>
