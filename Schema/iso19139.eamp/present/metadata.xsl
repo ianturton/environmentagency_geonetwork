@@ -108,6 +108,28 @@
     </xsl:call-template>
   </xsl:template>
 
+
+  <xsl:template mode="iso19139" match="gmd:MD_Metadata|*[@gco:isoType='gmd:MD_Metadata']" priorty="300">
+    <xsl:param name="schema"/>
+    <xsl:param name="edit"/>
+    <xsl:param name="embedded"/>
+
+    <xsl:choose>
+
+
+
+  <!-- constraints tab -->
+      <xsl:when test="$currTab='constraints'">
+        <xsl:apply-templates mode="elementEP" select="gmd:resourceConstraints|geonet:child[string(@name)='resourceConstraints']">
+          <xsl:with-param name="schema" select="$schema"/>
+          <xsl:with-param name="edit"   select="$edit"/>
+        </xsl:apply-templates>
+      </xsl:when>
+
+  </xsl:choose>
+
+</xsl:template>
+
   <!-- ===================================================================== -->
   <!-- these elements should be boxed -->
   <!-- ===================================================================== -->
