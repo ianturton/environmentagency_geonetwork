@@ -109,7 +109,7 @@
   </xsl:template>
 
 
-  <xsl:template mode="iso19139" match="gmd:MD_Metadata|*[@gco:isoType='gmd:MD_Metadata']" priorty="300">
+  <xsl:template mode="iso19139" match="gmd:MD_Metadata|*[@gco:isoType='gmd:MD_Metadata']" priority="300">
     <xsl:param name="schema"/>
     <xsl:param name="edit"/>
     <xsl:param name="embedded"/>
