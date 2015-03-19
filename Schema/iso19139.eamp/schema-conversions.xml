@@ -12,25 +12,33 @@
 <conversions>
     <!-- service xml_csw-record does not perform any further conversion after applying XSL -->
 
-    <!-- converts the gml URI to the gml/3.2 -->
-    <!-- set the parentidentifier if null -->
+
+      <converter name="eamp2gemini22"
+                   service="xml_csw-record"
+                   nsUri="http://www.isotc211.org/2005/gmd"
+                   schemaLocation="www.isotc211.org/2005/gmd/gmd.xsd"
+                   xslt="xml_eamp2gemini22.xsl"/>
+    <!-- 
+
+
+
 	<converter name="gemini2gemini"
                service="xml_csw-record"
                nsUri="http://www.isotc211.org/2005/gmd"
                schemaLocation="www.isotc211.org/2005/gmd/gmd.xsd"
                xslt="xml_gemini2gemini.xsl"/>
 
-    <!-- reset the metadatastandardname and version -->
+
     <converter name="gemini2iso19139"
                service="xml_csw-record"
                nsUri="http://www.isotc211.org/2005/gmd"
                schemaLocation="www.isotc211.org/2005/gmd/gmd.xsd"
                xslt="xml_gemini2iso19139.xsl"/>
 
-    <!-- Same as original iso19139 to dc converter -->
+
     <converter name="gemini2dc"
                service="xml_csw-record"
                nsUri="http://www.openarchives.org/OAI/2.0/"
                schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc.xsd"
-               xslt="xml_gemini2dc.xsl"/>
+               xslt="xml_gemini2dc.xsl"/> -->
 </conversions>
