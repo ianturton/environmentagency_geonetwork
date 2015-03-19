@@ -29,11 +29,7 @@
 
     <!--DISTRIBUTION FORMAT -->
     <sch:pattern>
-        <sch:title>DistributionFormat</sch:title>
-    </sch:pattern>
-
-    <sch:pattern>
-        <sch:title>EAMP-mi1-DistributionFormat</sch:title>
+        <sch:title>$loc/strings/EAMP100</sch:title>
         <sch:rule context="//gmd:distributionInfo/gmd:MD_Distribution/gmd:distributionFormat">
             <sch:assert test="string-length(.)>0">$loc/strings/EAMP100.alert.noformat</sch:assert>
         </sch:rule>
@@ -63,7 +59,7 @@
     <!-- POINT OF CONTACT -->
 
     <sch:pattern>
-        <sch:title>PointOfContact</sch:title>
+        <sch:title>$loc/strings/EAMP300</sch:title>
     </sch:pattern>
 
     <sch:pattern>
