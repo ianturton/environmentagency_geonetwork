@@ -5,10 +5,32 @@
 		Version:	1
 -->
 
-<xsl:stylesheet version="1.0" exclude-result-prefixes="eamp" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:eamp="http://environment.data.gov.uk/eamp" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<xsl:stylesheet version="1.0" exclude-result-prefixes="eamp geonet" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:eamp="http://environment.data.gov.uk/eamp" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:geonet="http://www.fao.org/geonetwork" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	
-	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
+	<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+
+	<!-- Remove geonet's own stuff -->
+	<xsl:template match="geonet:info" priority="1000"/>
 	
+	<!-- from iso19139 one to remove "root" element. Not quite right, but it works-->
+	<xsl:template match="/root">
+		<xsl:apply-templates select="gmd:MD_Metadata"/>
+	</xsl:template>
+	
+	<!-- this does some stuff -->	
+	<xsl:template match="/gmd:MD_Metadata" priority="400">
+		<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" 
+		xmlns:gco="http://www.isotc211.org/2005/gco" 
+		xmlns:gml="http://www.opengis.net/gml/3.2" 
+		xmlns:srv="http://www.isotc211.org/2005/srv" 
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:gmx="http://www.isotc211.org/2005/gmx"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.isotc211.org/2005/gmx http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd">		
+		<xsl:apply-templates select="@* | node()"/>
+		</gmd:MD_Metadata>
+	</xsl:template>
+		
 	<!-- Add any nodes here that are not to be copied over. Separate with '|', a pipe. If node is a parent, children will not be copied either. -->
 	<xsl:template match="gmd:pointOfContact"/>
 	
@@ -153,32 +175,6 @@
 		<gmd:metadataStandardVersion>
 			<gco:CharacterString>2.2</gco:CharacterString>
 		</gmd:metadataStandardVersion>
-	</xsl:template>
-
-	<!-- Change EAMP schema location to gemini version -->
-	<xsl:template match="/*">
-		<xsl:element name="{name()}" namespace="{namespace-uri()}">
-			<xsl:copy-of select="namespace::*[name()]"/>
-			<xsl:apply-templates select="@*"/>
-				<xsl:attribute name="xsi:schemaLocation">
-					<xsl:value-of select="'http://www.isotc211.org/2005/gmx http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd'"/>
-				</xsl:attribute>
-			<xsl:apply-templates select="node()"/>
-		</xsl:element>
-	</xsl:template>
-	
-	<!-- this does some stuff -->	
-	<xsl:template match="/gmd:MD_Metadata">
-		<gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" 
-		xmlns:gco="http://www.isotc211.org/2005/gco" 
-		xmlns:gml="http://www.opengis.net/gml/3.2" 
-		xmlns:srv="http://www.isotc211.org/2005/srv" 
-		xmlns:xlink="http://www.w3.org/1999/xlink"
-		xmlns:gmx="http://www.isotc211.org/2005/gmx"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		xsi:schemaLocation="http://www.isotc211.org/2005/gmx http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd">		
-		<xsl:apply-templates select="@* | node()"/>
-		</gmd:MD_Metadata>
 	</xsl:template>
 	
 	<!-- copy All -->
