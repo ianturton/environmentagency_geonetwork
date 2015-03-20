@@ -1,0 +1,8 @@
+/var/log/resetpasswd.log
+{
+  rotate 8
+  weekly
+  compress
+  missingok
+  notifempty
+}
