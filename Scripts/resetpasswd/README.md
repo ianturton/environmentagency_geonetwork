@@ -38,6 +38,10 @@ If you wish to avoid all existing users from being forced to change their passwo
     update users set password = password || 'a';
     update users set password = substring(password from 1 for 80);
 
+### Logging
+
+All log messages are written to `stdout`, should output be written to a file a sample logrotate configuration is provided (`resetpasswd.logrotate`) which should be copied to `/etc/logrotate.d/`.
+
 ## Usage
 
 For usage run `resetpasswd.py` using the `python` interpreter from the virtual environment:
@@ -69,3 +73,9 @@ For usage run `resetpasswd.py` using the `python` interpreter from the virtual e
     * The audit table is used to determine the profile as:
         * it's possible that the administrator might change the users profile during the time that the user has been locked out;
         * The Administrator profile is special in that it doesn't appear in the `usergroups` table as an Administrator is effectely a member of all groups. This means that the `usergroups` table can't be used to determine a users profile.
+
+## Potential enhancements
+
+* Send a warning email x days before a users account is locked
+* Add prominent link to the home page from the page that confirms a users password has been changed
+* Ensure a users is logged on the page that confirms a users password has been changed
