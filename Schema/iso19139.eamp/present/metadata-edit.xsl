@@ -161,9 +161,9 @@
   </xsl:template>
 
   <!-- use thesaurus for data format -->
-  <xsl:template mode="addXMLFragment" match="gmd:distributionFormat|geonet:child[@name='distributionFormat' and @prefix='gmd']" priority="300">
+  <!--<xsl:template mode="addXMLFragment" match="gmd:distributionFormat|geonet:child[@name='distributionFormat' and @prefix='gmd']" priority="300">
     <xsl:text>Ext.getCmp('editorPanel').showKeywordSelectionPanel</xsl:text>
-  </xsl:template>
+  </xsl:template> -->
 
 
 
