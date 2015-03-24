@@ -31,6 +31,11 @@
 		<label>Edition Date</label>
 		<description>Date of the edition</description>
 	</element>
+	<!--EAMP-->
+	<element name="gco:Date" context="gmd:CI_Citation">
+		<label>Date</label>
+		<description>Date in which the data resource was created or revised (updated).</description>
+	</element>
 	<element name="gco:Date" id="393.0">
 		<label>Date</label>
 		<description>Formatted as 2007-09-12 (YYYY-MM-DD)</description>
@@ -79,11 +84,9 @@
             organization</description>
 		<_condition>Use obligation/condition from referencing object</_condition>
 	</element>
-	<!--EAMP-->
 	<element name="gmd:CI_Date" id="393.0">
 		<label>Date</label>
 		<description>Reference date and event used to describe it (YYYY-MM-DD)</description>
-		<!--<description>Date in which the data resource was created or revised (updated).</description>-->
 		<_condition>Use obligation/condition from referencing object</_condition>
 	</element>
 	<element name="gmd:CI_OnlineResource" id="396.0">
@@ -1238,7 +1241,8 @@ If  the data has been through the Approval for Access process the abstract from 
 	<element name="gmd:individualName" id="375.0">
 		<label>Individual name</label>
 		<description>Name of the individual, written as per the staff directory on Easinet.</description>
-		<_condition>Conditional / organisationName and positionName not documented?</_condition>
+		<help>Needed if role is custodian</help>
+		<condition>Conditional</condition>
 	</element>
 	<element name="gmd:initiativeType" id="66.5">
 		<label>Initiative Type</label>
@@ -1284,7 +1288,7 @@ If  the data has been through the Approval for Access process the abstract from 
 		<label>Level description</label>
 		<description>Detailed description about the level of the data specified by the
             scope</description>
-		<_condition>Conditional / level not equal 'dataset' or 'series'?</_condition>
+		<_condition>Conditional / level not equal &apos;dataset&apos; or &apos;series&apos;?</_condition>
 	</element>
 	<element name="gmd:lineage" id="81.0">
 		<label>Lineage</label>
@@ -1774,8 +1778,8 @@ If  the data has been through the Approval for Access process the abstract from 
 	<!--EAMP-->
 	<element name="gmd:organisationName" id="376.0">
 		<label>Organisation name</label>
-		<description>Name of the organisation the individual works for - usually 'Environment Agency'</description>
-		<condition>conditional</condition>
+		<description>Name of the organisation the individual works for - usually &apos;Environment Agency&apos;</description>
+		<condition>Mandatory</condition>
 	</element>
 	<element name="gmd:orientationParameterAvailability" id="172.0">
 		<label>Orientation parameter availability</label>
@@ -1872,6 +1876,7 @@ If  the data has been through the Approval for Access process the abstract from 
 	<element name="gmd:positionName" id="377.0">
 		<label>Position name</label>
 		<description>Role of the individual, written as per the staff directory on Easinet</description>
+		<help>Needed if role is custodian</help>
 		<condition>conditional</condition>
 	</element>
 	<element name="gmd:postalCode" id="384.0">

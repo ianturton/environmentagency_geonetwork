@@ -13,24 +13,27 @@ IF OLD.password = rpad('', 80, 'a') AND NEW.password <> rpad('', 80, 'a') THEN
                             row_data,
                             changed_fields,
                             CASE
-                                WHEN changed_fields ? 'password'
-                                        AND changed_fields->'password' = rpad('', 80, 'a') THEN row_data->'profile'
-                                ELSE changed_fields->'profile'
+                                WHEN changed_fields ? 'password' AND changed_fields->'password' = rpad('', 80, 'a') THEN
+                                    row_data->'profile'
+                                WHEN changed_fields ? 'profile' THEN
+                                    changed_fields->'profile'
+                                ELSE
+                                    row_data->'profile'
                             END AS profile
                         FROM audit.logged_actions
                         WHERE SCHEMA_NAME = 'public'
                             AND TABLE_NAME = 'users'
-                            AND changed_fields ? 'profile'
                             AND (row_data->'id')::int = NEW.id
-                        ORDER BY event_id) AS a LIMIT 1);
+                            AND NOT (row_data->'password' = rpad('', 80, 'a') AND NOT changed_fields ? 'profile')
+                        ORDER BY event_id desc) AS a LIMIT 1);
 END IF;
 RETURN NEW;
 END;
 $function$ LANGUAGE plpgsql;
 COMMENT ON FUNCTION public.users_password_change_update_profile() IS $comment$
 Trigger function to ensure that if a users password is being changed from the
-default reset password then ensure the users profile is updated to the highest
-profile that the user has assigned in usergroups
+default reset password then ensure the users profile is restored to it's
+correct value
 $comment$;
 
 DROP TRIGGER IF EXISTS users_password_change ON users;
