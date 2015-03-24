@@ -1380,8 +1380,7 @@
 		<description>Name of reference system used</description>
 		<condition>mandatory</condition>
 	</element>
-	<!-- commented out data formats list in favour of using thesaurus -->
-	<!--<element name="gmd:name" context="gmd:MD_Format" id="285.0">
+	<element name="gmd:name" context="gmd:MD_Format" id="285.0">
 		<label>Name</label>
 		<description>Name of the data transfer format(s)</description>
 		<help>name of the data transfer format(s)</help>
@@ -1404,7 +1403,7 @@
 			<option value="OGC:WMC">OGC:WMC</option>
 			<option value="OGC:OWS Context">OGC:OWS Context</option>
 		</helper>
-	</element> -->
+	</element>
 	<element name="gmd:name" context="gmd:MD_ExtendedElementInformation"
 		id="307.0">
 		<label>Name</label>
