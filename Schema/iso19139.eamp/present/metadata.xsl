@@ -189,7 +189,7 @@
 
 
   <!-- adding picker for data format thesaurus -->
-  <xsl:template mode="addXMLFragment" match="gmd:MD_Format|geonet:child[@name='MD_Format' and @prefix='gmd']" priority="300">
+  <xsl:template mode="addXMLFragment" match="gmd:distributionFormat|geonet:child[@name='distributionFormat' and @prefix='gmd']" priority="300">
     <xsl:text>showKeywordSelectionPanel</xsl:text>
   </xsl:template>
 
