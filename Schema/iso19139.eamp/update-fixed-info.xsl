@@ -107,13 +107,13 @@
     <!-- Only set metadataStandardName and metadataStandardVersion if not set. -->
     <xsl:template match="gmd:metadataStandardName" priority="10">
         <xsl:copy>
-            <gco:CharacterString>UK GEMINI</gco:CharacterString>
+            <gco:CharacterString>Environment Agency Metadata Profile</gco:CharacterString>
         </xsl:copy>
     </xsl:template>
 	
     <xsl:template match="gmd:metadataStandardVersion" priority="10">
         <xsl:copy>
-            <gco:CharacterString>2.2</gco:CharacterString>
+            <gco:CharacterString>1.1</gco:CharacterString>
         </xsl:copy>
     </xsl:template>
 

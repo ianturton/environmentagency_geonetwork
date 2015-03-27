@@ -9,7 +9,9 @@
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 xmlns:geonet="http://www.fao.org/geonetwork"
-                xsi:schemaLocation="http://www.isotc211.org/2005/gmx 
+                xsi:schemaLocation="http://www.isotc211.org/2005/gmd
+                                                http://www.isotc211.org/2005/gmd/gmd.xsd
+                                                http://www.isotc211.org/2005/gmx 
                                                 http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd"
                 exclude-result-prefixes="geonet">
 
@@ -22,11 +24,12 @@
 
                 
    
-	<!-- <xsl:template match="gmd:MD_Metadata" priority="100">
+	<!-- -->
+    <xsl:template match="gmd:MD_Metadata" priority="100">
 		<MD_Metadata xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd">
 			<xsl:apply-templates select="node()" />
 		</MD_Metadata>
-	</xsl:template> -->
+	</xsl:template> 
 	
 	<xsl:template match="*" priority="0">
 		<xsl:element name="{name()}">
