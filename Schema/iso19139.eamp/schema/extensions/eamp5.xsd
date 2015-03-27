@@ -91,7 +91,7 @@
 			<xs:documentation>Enumerates the AfA status</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="AfA (Pubication Scheme and Information for Re-Use Register)"/>
+			<xs:enumeration value="AfA (Publication Scheme and Information for Re-Use Register)"/>
 			<xs:enumeration value="AfA (Public Register)"/>
 			<xs:enumeration value="AfA (Publication Scheme)"/>
 			<xs:enumeration value="AfA (Information Requests only)"/>
