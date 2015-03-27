@@ -26,7 +26,7 @@
    
 	<!-- -->
     <xsl:template match="gmd:MD_Metadata" priority="100">
-		<MD_Metadata xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/gmx http://eden.ign.fr/xsd/isotc211/isofull/20090316/gmx/gmx.xsd">
+		<MD_Metadata>
 			<xsl:apply-templates select="node()" />
 		</MD_Metadata>
 	</xsl:template> 
