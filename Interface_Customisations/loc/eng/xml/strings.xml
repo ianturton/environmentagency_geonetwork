@@ -408,7 +408,7 @@
 	<confirmBatchDelete>Are you sure you want to delete all $1 selected metadata from the database?</confirmBatchDelete>
 	<confirmNewPassword>Confirm new password</confirmNewPassword>
 	<confirmPassword>Confirm password</confirmPassword>
-	<constraintsTab>Constraints</constraintsTab>
+	<constraintsTab>Metadata Constraints</constraintsTab>
 	<contactUs>Contact us</contactUs>
 	<contains>Contains</contains>
 	<contentInfoTab>Content Info</contentInfoTab>
