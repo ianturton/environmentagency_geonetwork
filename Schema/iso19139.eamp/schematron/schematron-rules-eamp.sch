@@ -43,14 +43,14 @@
     <sch:pattern>
         <sch:title>EAMP-mi2-AfANumber</sch:title>
         <sch:rule context="//*[eamp:EA_Afa]">
-            <sch:assert test="((//eamp:EA_AfaStatus = 'notAfaToBeAssessedWithGuidance' or
-            //eamp:EA_AfaStatus = 'afaPubSchemeAndInfoForReuseReg' or
-            //eamp:EA_AfaStatus = 'afaPublicRegister' or
-            //eamp:EA_AfaStatus = 'afaPublicationScheme' or
-            //eamp:EA_AfaStatus = 'afaInformationRequestsOnly') and
+            <sch:assert test="((//eamp:EA_AfaStatus = 'Not AfA (To be Assessed with Guidance)' or
+            //eamp:EA_AfaStatus = 'AfA (Publication Scheme and Information for Re-Use Register)' or
+            //eamp:EA_AfaStatus = 'AfA (Public Register)' or
+            //eamp:EA_AfaStatus = 'AfA (Publication Scheme)' or
+            //eamp:EA_AfaStatus = 'AfA (Information Requests only)') and
             string-length(//*[eamp:afaNumber]//gco:Decimal)!=0) or ((
-            //eamp:EA_AfaStatus = 'notAfaToBeAssessed' or 
-            //eamp:EA_AfaStatus = 'notApplicableThirdpartyDataset') 
+            //eamp:EA_AfaStatus = 'Not AfA (To be Assessed)' or 
+            //eamp:EA_AfaStatus = 'Not Applicable - third party dataset') 
             and string-length(//*[eamp:afaNumber]//gco:Decimal)=0)">$loc/strings/EAMP200.alert.number</sch:assert>
     </sch:rule>
     </sch:pattern>
