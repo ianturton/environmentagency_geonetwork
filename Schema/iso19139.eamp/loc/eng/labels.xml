@@ -1388,7 +1388,7 @@ If  the data has been through the Approval for Access process the abstract from 
 		<description>Name of reference system used</description>
 		<condition>mandatory</condition>
 	</element>
-	<!--EAMP, commented out in favour of using thesaurus-->
+	<!--EAMP, default, using custom list
 
 	
 	<element name="gmd:name" context="gmd:MD_Format" id="285.0">
@@ -1413,6 +1413,66 @@ If  the data has been through the Approval for Access process the abstract from 
 			<option value="JPEG">JPEG</option>
 			<option value="OGC:WMC">OGC:WMC</option>
 			<option value="OGC:OWS Context">OGC:OWS Context</option>
+		</helper>
+	</element>-->
+	<element name="gmd:name" context="gmd:MD_Format" id="285.0">
+		<label>Name</label>
+		<description>Name of the data distribution format(s)</description>
+		<help>Data should be available in at least one Open format</help>
+		<condition>mandatory</condition>
+		<helper rel="gmd:version">
+			<option value="Open format | Arc/Info ASCII Grid (AAIGrid)">Arc/Info ASCII Grid (AAIGrid)</option>                        
+			<option value="Proprietary Format | Arc/Info Binary Grid (AIG)">Arc/Info Binary Grid (AIG)</option>
+			<option value="Open Format | ASCII Gridded XYZ (XYZ)">ASCII Gridded XYZ (XYZ)</option>
+			<option value="Open format | CAD Data eXchange Format (DFX)">CAD Data eXchange Format (DFX)</option>
+			<option value="Proprietary format |  CAD Drawing file (DWG)">CAD Drawing file (DWG)</option>
+			<option value="OGC Web Services | Catalogue Service for the Web (CSW)">Catalogue Service for the Web (CSW)</option>
+			<option value="Open format | City GML (Citygml)">City GML (Citygml)</option>
+			<option value="Open format | Comma Separated Values file (CSV)">Comma Separated Values file (CSV)</option>
+			<option value="Open format | dBASE (DBF)">dBASE (DBF)</option>
+			<option value="Proprietary format |  ER Mapper (ECW)">ER Mapper (ECW)</option>
+			<option value="Proprietary format |  ERDAS IMAGINE (IMG)">ERDAS IMAGINE (IMG)</option>
+			<option value="Proprietary format |  ERDASRaw (RAW)">ERDASRaw (RAW)</option>
+			<option value="Proprietary format |  ESRI File based Geodatabase (GDB)">ESRI File based Geodatabase (GDB)</option>
+			<option value="Open format | Geo Tagged Image File Format (GeoTIFF)"> Geo Tagged Image File Format (GeoTIFF)</option>
+			<option value="Open format | Geography Markup Language (GML)">Geography Markup Language (GML)</option>
+			<option value="Open format | GeoPackage (GPKG)">GeoPackage (GPKG)</option>
+			<option value="Open format | GeoRSS (Geo)">GeoRSS (Geo)</option>
+			<option value="Proprietary format | Graphical Interchange Format (GIF)">Graphical Interchange Format (GIF)</option>
+			<option value="Open format | JavaScript Object Notation (GeoJSON)">JavaScript Object Notation (GeoJSON)</option>
+			<option value="OGC Web Services | JavaScript Object Notation (JSON)">JavaScript Object Notation (JSON)</option>
+			<option value="Open format | Joint Photographic Experts Group (JPEG)">Joint Photographic Experts Group (JPEG)</option>
+			<option value="Open format | Joint Photographic Experts Group 2000 (JPEG2000)">Joint Photographic Experts Group 2000 (JPEG2000)</option>
+			<option value="Open format | Keyhole Markup Language (KML)">Keyhole Markup Language (KML)</option>
+			<option value="Open format | Keyhole Markup Language Zipped (KMZ)">Keyhole Markup Language Zipped (KMZ)</option>
+			<option value="Compressed format | Lempel-Ziv and Welch  (TIFF)">Lempel-Ziv and Welch (TIFF)</option>
+			<option value="Open format | Lidar Data Exchange Format (LAS)">Lidar Data Exchange Format (LAS)</option>
+			<option value="Open format | Lidar Data Exchange Format (LAZ)">Lidar Data Exchange Format (LAZ)</option>
+			<option value="Open format | Many DAT formats (DAT)">Many DAT formats (DAT)</option>
+			<option value="Open format | Many XML formats (XML)">Many XML formats (XML)</option>
+			<option value="Proprietary format |  MapInfo (TAB)">MapInfo (TAB)</option>
+			<option value="Proprietary format |  MapInfo MIF/MID (MIF)">MapInfo MIF/MID (MIF)</option>
+			<option value="Proprietary format |  ESRI, Intergraph, MS Access (MDB)">MDB (ESRI, Intergraph, MS Access) (MDB)</option>
+			<option value="Compressed format | Multi-resolution Seamless Image Database (MrSID)">Mr Sid (Multi-resolution Seamless Image Database) (MrSID)</option>
+			<option value="Proprietary format |  MS Excel (XLS)"> MS Excel (XLS)</option>
+			<option value="Open format |  MS Excel (XLSX)">MS Excel (XLSX)</option>
+			<option value="Proprietary format |  MS Word or Open Office (DOC)">MS Word or Open Office (DOC)</option>
+			<option value="Open format | MS Word or Open Office (DOCX)">MS Word or Open Office (DOCX)</option>
+			<option value="Open format | National Transfer Format - OS (NTF)">National Transfer Format - OS (NTF)</option>
+			<option value="Open format | Open Document Presentation (ODP)">Open Document Presentation (ODP)</option>
+			<option value="Open format | Open Document Spreadsheet (ODS)">Open Document Spreadsheet (ODS)</option>
+			<option value="Open format | Open Document Text (ODT)">Open Document Text (ODT)</option>
+			<option value="Compressed format | Packbit (TIFF)">Packbit (TIFF)</option>
+			<option value="Open format | Portable Document Format - 3D (PDF)">Portable Document Format - 3D (PDF)</option>
+			<option value="Open format | Portable Document Format - GeoReferenced (PDF)">Portable Document Format - GeoReferenced (PDF)</option>
+			<option value="Open format | Portable Document Format - Standardized (PDF)">Portable Document Format - Standardized (PDF)</option>
+			<option value="Open format | Portable Document Format - Unreferenced (PDF)">Portable Document Format - Unreferenced (PDF)</option>
+			<option value="Open format | Portable Network Graphic (PNG)">Portable Network Graphics (PNG)</option>
+			<option value="Open format | Resource Description Framework (RDF)">Resource Description Framework (RDF)</option>                       
+			<option value="Open format | Resource Description Framework (XML)">Resource Description Framework (XML)</option>
+			<option value="Open format | Shapefile (SHP)">Shapefile (SHP)</option>
+			<option value="Proprietary format |  Tab Separated Values (TSV)">Tab Separated Values (TSV)</option>
+			<option value="Open format | Tagged Image File Format (TIFF)">Tagged Image File Format (TIFF)</option>
 		</helper>
 	</element>
 	<element name="gmd:name" context="gmd:MD_ExtendedElementInformation"
