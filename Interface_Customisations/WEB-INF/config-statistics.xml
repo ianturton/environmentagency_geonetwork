@@ -220,7 +220,7 @@
                          false to dump only data -->
                     <param name="dumpHeader" value="true"/>
                     <!-- Allowed tables to be exported, separated by commas -->
-                    <param name="allowedTables" value="requests,params,users,records_custodian,records_date_updated,records_orl,records_status,records_validation"/>
+                    <param name="allowedTables" value="requests,params,users,records_custodian,records_date_updated,records_orl,records_status,records_validation,records_deleted"/>
                 </call>
             </output>
         </service>

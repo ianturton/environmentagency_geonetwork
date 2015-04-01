@@ -260,6 +260,10 @@
 			  <br/>
 						<a href="javascript:injectServiceResponse('stat.tableExport?tableToExport=records_validation','stat.tableExportDiv')">
 					Records by Validation (published but not validated)</a>&#160;
+			 <br/>	
+						<a href="javascript:injectServiceResponse('stat.tableExport?tableToExport=records_deleted','stat.tableExportDiv')">
+					Records Deleted in past week</a>&#160;
+
 					</td>
 				</tr>
 				<tr><td class="spacer"/></tr>

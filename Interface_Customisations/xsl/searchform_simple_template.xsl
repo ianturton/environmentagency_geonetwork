@@ -183,12 +183,12 @@
 					<select id="output_simple" size="1" class="content" name="output" onchange="$('output').value = this.options[this.selectedIndex].value">
 						<xsl:for-each select="/root/gui/strings/outputType">
 							<option value="{@id}">
-<!--Set default selection on search options output as text only-->
-								<!--
+
 								<xsl:if test="(/root/gui/searchDefaults/output and @id = /root/gui/searchDefaults/output) 
 									or @default = 'true'">
-								-->
+<!--
 								<xsl:if test="@id='text'">
+-->
 									<xsl:attribute name="selected">selected</xsl:attribute>
 								</xsl:if>
 								<xsl:value-of select="."/>

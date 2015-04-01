@@ -115,8 +115,7 @@ function resetSimpleSearch()
     setParam(form['sortBy'],      'relevance');
     setParam(form['sortOrder'],   '');
     setParam(form['hitsPerPage_simple'], '10');
-//Set default to text only
-    setParam(form['output_simple'],      'text');
+    setParam(form['output_simple'],      'full');
 }
 
 
@@ -318,8 +317,7 @@ function resetAdvancedSearch()
     setParam(form['requestedLanguage'],      Env.lang);
  	setParam(form['sortBy'],      'relevance');
   setParam(form['hitsPerPage'], '10');
-//Set default to text only
-  setParam(form['output'],      'text');
+  setParam(form['output'],      'full');
 
 	// reset the selectors so that new searches are done to fill them
 	selectorIds = [];
