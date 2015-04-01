@@ -75,6 +75,9 @@
         </xsl:call-template>
     </xsl:template>
 
+
+	
+
     <!-- Restrict the language list -->
 
   <xsl:template mode="iso19139" match="//gmd:language[gco:CharacterString]" priority="200">
@@ -112,7 +115,7 @@
   <!-- these elements should be boxed -->
   <!-- ===================================================================== -->
 
-  <xsl:template mode="iso19139" match="gmd:identificationInfo|gmd:distributionInfo|gmd:descriptiveKeywords|gmd:thesaurusName|gmd:spatialRepresentationInfo|gmd:pointOfContact|gmd:dataQualityInfo|gmd:referenceSystemInfo|gmd:equivalentScale|gmd:projection|gmd:ellipsoid|gmd:extent[name(..)!='gmd:EX_TemporalExtent']|gmd:geographicBox|gmd:EX_TemporalExtent|gmd:MD_Distributor|srv:containsOperations|srv:SV_CoupledResource|gmd:metadataConstraints|gmd:accessConstraints|gmd:otherConstraints|eamp:EA_Constraints" priority="300">
+  <xsl:template mode="iso19139" match="gmd:identificationInfo|gmd:distributionInfo|gmd:descriptiveKeywords|gmd:spatialRepresentationInfo|gmd:pointOfContact|gmd:dataQualityInfo|gmd:referenceSystemInfo|gmd:equivalentScale|gmd:projection|gmd:ellipsoid|gmd:extent[name(..)!='gmd:EX_TemporalExtent']|gmd:geographicBox|gmd:EX_TemporalExtent|gmd:MD_Distributor|srv:containsOperations|srv:SV_CoupledResource|gmd:resourceConstraints" priority="300">
     <xsl:param name="schema"/>
     <xsl:param name="edit"/>
     
@@ -183,5 +186,11 @@
       <xsl:with-param name="edit" select="$edit"/>
     </xsl:apply-templates>
   </xsl:template> 
+
+
+  <!-- adding picker for data format thesaurus -->
+  <!--<xsl:template mode="addXMLFragment" match="gmd:distributionFormat|geonet:child[@name='distributionFormat' and @prefix='gmd']" priority="300">
+    <xsl:text>showKeywordSelectionPanel</xsl:text>
+  </xsl:template> -->
 
 </xsl:stylesheet>

@@ -10,9 +10,11 @@
   <constraintInfo>Access constraint information</constraintInfo>
 
     <rules name="schematron-rules-gemini22">UK GEMINI recommendations</rules>
+    <rules name="schematron-rules-eamp">EAMP recommendations</rules>
 
-    <gemini2gemini>Export this metadata as a GEMINI 2.2 file</gemini2gemini>
+    <!--<gemini2gemini>Export this metadata as a GEMINI 2.2 file</gemini2gemini>
     <gemini2iso19139>Export this metadata as an ISO19139 XML file</gemini2iso19139>
-    <gemini2dc>Export this metadata as an AOI Dublin Core XML file</gemini2dc>
+    <gemini2dc>Export this metadata as an AOI Dublin Core XML file</gemini2dc> -->
+    <eamp2gemini22>Export this metadata in GEMINI 2.2 format</eamp2gemini22>
 
 </strings>

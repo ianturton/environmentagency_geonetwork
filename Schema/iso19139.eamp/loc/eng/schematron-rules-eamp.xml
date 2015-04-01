@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+
+    <EAMP999>Metadata standard</EAMP999>
+    <EAMP999.alert.name>Metadata standard name is wrong</EAMP999.alert.name>
+    <EAMP999.alert.version>Metadata standard version is wrong</EAMP999.alert.version>
+    <EAMP999.report.name>Metadata standard name: </EAMP999.report.name>
+    <EAMP999.report.version>Metadata standard version: </EAMP999.report.version>
+
+    <EAMP100>Distribution Format</EAMP100>
+    <EAMP100.alert.noformat>At least one Distribution Format must be provided</EAMP100.alert.noformat>
+
+    <EAMP200>AfA</EAMP200>
+    <EAMP200.alert.number>AfANumber is mandatory for records with status notAfaToBeAssessedWithGuidance, afaPubSchemeAndInfoForReuseReg, afaPublicRegister, afaPublicationScheme or afaInformationRequestsOnly</EAMP200.alert.number>
+
+    <EAMP300>Point of Contact</EAMP300>
+    <EAMP300.alert.name>Each Point of Contact must contain one Individual Name</EAMP300.alert.name>
+    <EAMP300.alert.org>Each Point of Contact must contain one Organisation Name</EAMP300.alert.org>
+    <EAMP300.alert.position>Each Point of Contact must contain one one Position Name</EAMP300.alert.position>
+    <EAMP300.alert.role>Each Point of Contact must contain one Role</EAMP300.alert.role>
+    <EAMP300.alert.custodian>Each dataset must have exactly two points of contact with the role "Custodian"</EAMP300.alert.custodian>
+    <EAMP300.alert.owner>Each dataset must have exactly one point of contact with the role "Owner"</EAMP300.alert.owner>
+    <EAMP300.alert.poc>Each dataset must have exactly one point of contact with the role "Point of Contact"</EAMP300.alert.poc>
+
+
+
+</strings>

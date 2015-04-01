@@ -39,7 +39,7 @@
         </sch:rule>
     </sch:pattern>
 
-    <!-- 5.16 Responsible organization -->
+    <!-- 5.16 Responsible organization (commented out for EA use)
     <sch:pattern>
         <sch:title>$loc/strings/UK0516r</sch:title>
         <sch:rule context="gmd:identificationInfo/gmd:MD_DataIdentification">
@@ -78,10 +78,10 @@
             <sch:assert test="gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress/gco:CharacterString/text()">$loc/strings/UK0516.alert.email</sch:assert>
 
         </sch:rule>
-    </sch:pattern>
+    </sch:pattern> -->
 
 
-    <!--METADATA STANDARD-->
+    <!--METADATA STANDARD commented out for EAMP
     <sch:pattern>
         <sch:title>$loc/strings/UK999</sch:title>
         <sch:rule context="//gmd:MD_Metadata">
@@ -92,7 +92,7 @@
             <sch:report test="true()"><sch:value-of select="$loc/strings/UK999.report.version"/><sch:value-of select="gmd:metadataStandardVersion/gco:CharacterString"/></sch:report>
             <sch:assert test="gmd:metadataStandardVersion/gco:CharacterString and gmd:metadataStandardVersion/gco:CharacterString= '2.2'">$loc/strings/UK999.alert.version</sch:assert>
         </sch:rule>
-    </sch:pattern>
+    </sch:pattern>-->
 
     <!-- ORIGINAL RULES -->
 

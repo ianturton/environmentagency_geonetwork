@@ -13,9 +13,9 @@
 			<br/>
 			<a href="#3">Advanced search</a>
 			<br/>
-			<a href="#4">Data themes</a>
+			<a href="#4">Data categories</a>
 			<br/>
-			<a href="#5">Recently updated</a>
+			<a href="#5">Recent changes</a>
 			<br/>
 			<a href="#6">How to add metadata</a>
 			<br/>
@@ -29,16 +29,16 @@
 			<br/>
 			<a href="#11">Deleting records</a>
 			<br/>
-			<a href="#12">Defenitions</a>
+			<a href="#12">Definitions</a>
 			<br/>
 			<a href="#13">Show map</a>
 		</p>
 		<br/>
 		<h3>Content sections:</h3>
 		<a name="1"/>
-		<h1>Finding spatial data</h1>
+		<h1>Finding data</h1>
 		<p>
-			<i>Metadata Catalogue</i> offers a simple and advanced search.</p>
+			<b>Metadata Catalogue</b> offers a simple and advanced search.</p>
 		<br/>
 		<a name="2"/>
 		<h1>Simple search</h1>
@@ -50,19 +50,23 @@
 				<li>Location</li>
 				<li>Free text (any metadata field)</li>
 			</ul>	
-		Note - Keywords are not case sensitive.</p>
+		Note - Keywords are not case sensitive.
 		<br/>
+		<p>How to search: Enter the word(s) you want to search on in the ‘What?’ search box (top left) and click 'Search’. Results will display in alphabetical order.</p> 
+<br>To view the metadata record click on the title. The full metadata record will open.</br>
+<br>To begin a new search click on the ‘Home’ link (top left).</br></p> 
 		<a name="3"/>
 		<h1>Advanced search</h1>
-		<p>What can you do here? How much detail do we want to go into?.</p>
-		<br/>
+		<p>Select advanced search tab and enter words you want to search in the <b>'What?'</b> search box and click <b>'Search'</b> , the results will display in title order. 
+<br>You can also search by categories. Click on a category from the Categories list. All records within that category will display in alphabetical order.</br> 
+</p>
 		<a name="4"/>
-		<h1>Data themes</h1>
+		<h1>Data categories</h1>
 		<p>The data themes section shows all records within an environmental theme. Every record sits in the most relevant theme. Records may sit under more than one theme.</p>
 		<br/>
 		<a name="5"/>
-		<h1>Recently updated</h1>
-		<p>The recently updated section shows the 10 most recently updated records. This could be a change to one field or to many.</p>
+		<h1>Recent changes</h1>
+		<p>The recent changes section shows the 10 most recently updated records. </p>
 		<br/>
 		<a name="6"/>
 		<h1>How to add metadata</h1>
@@ -89,26 +93,22 @@
 		<br/>
 		<a name="9"/>
 		<h1>Emailing the metadata link</h1>
-		<p>Viewing a record – envelope icon on top left of record.
-		This functionality allows you to send an email with the metadata records unique ID.
-		Need more info as what the purpose of this is.</p>
+		<p>This functionality allows you to send an email with the metadata records unique ID. Click the envelope icon (top left).</p>
 		<br/>
 		<a name="10"/>
 		<h1>Permanent link to the record</h1>
-		<p>Star icon on top left of record
-		This shows the metadata records full URL which includes the unique ID.
-		Need more info as what the purpose of this is.</p>
+		<p>This functionality shows the metadata records full URL which includes the unique ID. Click the star icon (top left).</p>
 		<br/>
 		<a name="11"/>
 		<h1>Deleting records</h1>
-		<p>Metadata records cannot be deleted. We keep all records for historic purposes.
+		<p>Metadata records must not be deleted. We keep all records for historic purposes.
 		There is the functionality for administrators to retire records but these would need good reason - define what this is or link to process/guidance.</p>
 		<br/>
 		<a name="12"/>
 		<h1>Definitions</h1>
 		<p>
-			Definitions of dataset, data series, data services, spatial and published. These are all terms within our metadata.<br/>
-			<ul><li>
+			<ul>Definitions of dataset, data series, data services, spatial and published. These are all terms within our metadata.
+		<li>
 					<em>Dataset</em> - A dataset is a defined collection of digital data, typically a list or table of facts, which is held, extracted or formatted for a specific business purpose.</li>
 				<li>
 					<em>Data Series</em> - Data Collection of datasets sharing the same product specification</li>
@@ -123,7 +123,7 @@
 		<br/>
 		<a name="13"/>
 		<h1>Show map</h1>
-		<p>This functionality isn’t fully enabled in this version and we recommend that you do not use it<br/>
+		<p>This functionality isn’t fully enabled in this version and we recommend that you do not use it.<br/>
 		</p>
 	</content>
 </help>
