@@ -404,7 +404,7 @@
 	<completeTabEditor>Advanced editor</completeTabEditor>
 	<confirmCancel>Are you sure you want to leave the editor? (You will lose any unsaved changes)</confirmCancel>
 	<confirmCancelCreate>Are you sure you want to cancel creating this metadata?</confirmCancelCreate>
-	<confirmDelete>Are you sure you want to delete the metadata from the database?</confirmDelete>
+	<confirmDelete>Are you sure you want to permanently delete this metadata record? It is Environment Agency retention policy not to delete records, but to retire them. If this is a new record you have created and you want to start again, you may delete. If this is an existing metadata record please contact the Metadata Team for assistance.</confirmDelete>
 	<confirmBatchDelete>Are you sure you want to delete all $1 selected metadata from the database?</confirmBatchDelete>
 	<confirmNewPassword>Confirm new password</confirmNewPassword>
 	<confirmPassword>Confirm password</confirmPassword>
