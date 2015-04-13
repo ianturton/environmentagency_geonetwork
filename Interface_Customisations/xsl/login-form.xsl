@@ -70,7 +70,7 @@
 					<button class="banner" onclick="goSubmit('login')">
 						<xsl:value-of select="/root/gui/strings/login" />
 					</button>
-					<p style="text-align: left">If you are unable to login you're account may be locked to force you to change your password via the <a onclick="doBannerButton('/geonetwork/srv/eng/password.forgotten.form','','1',300)" href="javascript:void(0);">Forgot your password?</a> function.</p>
+					<p style="text-align: left">If you are unable to login, your account may be locked to force you to change your password via the <a onclick="doBannerButton('/geonetwork/srv/eng/password.forgotten.form','','1',300)" href="javascript:void(0);">Forgot your password?</a> function.</p>
 				</xsl:with-param>
 		</xsl:call-template>
 
