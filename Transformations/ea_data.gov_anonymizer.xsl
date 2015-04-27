@@ -89,7 +89,7 @@
 			  <gmd:address>
 				<gmd:CI_Address>
 				  <gmd:electronicMailAddress>
-					<gco:CharacterString>metadata@environment-agency.gov.uk</gco:CharacterString>
+					<gco:CharacterString>data.info@environment-agency.gov.uk</gco:CharacterString>
 				  </gmd:electronicMailAddress>
 				</gmd:CI_Address>
 			  </gmd:address>
@@ -124,7 +124,7 @@
 			  <gmd:address>
 				<gmd:CI_Address>
 				  <gmd:electronicMailAddress>
-					<gco:CharacterString>metadata@environment-agency.gov.uk</gco:CharacterString>
+					<gco:CharacterString>data.info@environment-agency.gov.uk</gco:CharacterString>
 				  </gmd:electronicMailAddress>
 				</gmd:CI_Address>
 			  </gmd:address>
