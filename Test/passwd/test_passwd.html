@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>test_passwd</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">admin-create-and-reset</td></tr>
+</thead><tbody>
+<!-- SETUP -->
+<tr>
+	<td>store</td>
+	<td>javascript{prompt(&quot;Admin password&quot;)}</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{prompt(&quot;Test username&quot;)}</td>
+	<td>test_username</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{prompt(&quot;Test password&quot;)}</td>
+	<td>test_password</td>
+</tr>
+<!-- ADMIN ACTIONS -->
+<tr>
+	<td>open</td>
+	<td>/geonetwork/srv/eng/main.home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<!-- Login as admin -->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<!-- Create test user -->
+<tr>
+	<td>open</td>
+	<td>/geonetwork/srv/eng/user.list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@onclick=&quot;load('/geonetwork/srv/eng/user.get')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+    <td>${test_username}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=surname</td>
+	<td>user</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=name</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>test@example.com</td>
+</tr>
+<!-- Too short -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>aaaaaaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='update1()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must be at least 8 characters long</td>
+	<td></td>
+</tr>
+<!-- Not complex enough -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>password1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='update1()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must contain one upper case, one lower case and one numeric character.</td>
+	<td></td>
+</tr>
+<!-- Contains repeated characters -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>Paaasword1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='update1()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain repeated characters</td>
+	<td></td>
+</tr>
+<!-- Contain sequences -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>Password1abc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='update1()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain sequences such as 123, abc</td>
+	<td></td>
+</tr>
+<!-- Just right but must enter it twice (confirm that default validation is
+     being done) -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>${test_password}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='update1()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Please enter your password twice.</td>
+	<td></td>
+</tr>
+<!-- Enter password twice and move on (may fail if the user already exists but
+     that's fine as we are only testing that the form is submitted -->
+<tr>
+	<td>type</td>
+	<td>name=password2</td>
+	<td>${test_password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@onclick='update1()']</td>
+	<td></td>
+</tr>
+<!-- Reset user password -->
+<tr>
+	<td>open</td>
+	<td>/geonetwork/srv/eng/user.list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+    <td>//td[text()='${test_username}']/following::button[text()='Reset Password'][1]</td>
+	<td></td>
+</tr>
+<!-- Too short -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>aaaaaaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='updateUserPw()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must be at least 8 characters long</td>
+	<td></td>
+</tr>
+<!-- Not complex enough -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>password1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='updateUserPw()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must contain one upper case, one lower case and one numeric character.</td>
+	<td></td>
+</tr>
+<!-- Contains repeated characters -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>Paaasword1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='updateUserPw()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain repeated characters</td>
+	<td></td>
+</tr>
+<!-- Contain sequences -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>Password1abc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='updateUserPw()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain sequences such as 123, abc</td>
+	<td></td>
+</tr>
+<!-- Just right but must enter it twice (confirm that default validation is
+     being done) -->
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>${test_password}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='updateUserPw()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Please enter your password twice.</td>
+	<td></td>
+</tr>
+<!-- Enter password twice and move on -->
+<tr>
+	<td>type</td>
+	<td>name=password2</td>
+	<td>${test_password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@onclick='updateUserPw()']</td>
+	<td></td>
+</tr>
+<!-- Logout -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.banner</td>
+	<td></td>
+</tr>
+<!-- PASSWORD RESET -->
+<tr>
+	<td>open</td>
+	<td>/geonetwork/srv/eng/main.home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+    <td>${test_username}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>${test_password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.banner</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Administration</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Change password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>${test_password}</td>
+</tr>
+<!-- Too short -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>aaaaaaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must be at least 8 characters long</td>
+	<td></td>
+</tr>
+<!-- Not complex enough -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>password1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must contain one upper case, one lower case and one numeric character.</td>
+	<td></td>
+</tr>
+<!-- Contains repeated characters -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>Paaasword1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain repeated characters</td>
+	<td></td>
+</tr>
+<!-- Contain sequences -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>Password1abc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain sequences such as 123, abc</td>
+	<td></td>
+</tr>
+<!-- Just right but must enter it twice (confirm that default validation is
+     being done) -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword</td>
+	<td>${test_password}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Please enter your password twice.</td>
+	<td></td>
+</tr>
+<!-- Enter password twice and move on -->
+<tr>
+	<td>type</td>
+	<td>name=newPassword2</td>
+	<td>${test_password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@onclick='doUpdate()']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='content_container']/table/tbody/tr[3]/td[3]</td>
+	<td>Your password has been successfully changed</td>
+</tr>
+<!-- Logout -->
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.banner</td>
+	<td></td>
+</tr>
+<!-- FORGOTTEN PASSWORD -->
+<tr>
+	<td>open</td>
+	<td>/geonetwork/srv/eng/main.home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+    <td>/geonetwork/srv/en/password.change.form?username=${test_username}&amp;changeKey=635d6c84ddda782a9b6ca9dda0f568b011bb7733</td>
+	<td></td>
+</tr>
+<!-- Too short -->
+<tr>
+	<td>type</td>
+	<td>css=td.padded &gt; input[name=&quot;password&quot;]</td>
+	<td>aaaaaaa</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick=&quot;updateUserPw('/geonetwork/srv/eng/password.change.submit')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must be at least 8 characters long</td>
+	<td></td>
+</tr>
+<!-- Not complex enough -->
+<tr>
+	<td>type</td>
+	<td>css=td.padded &gt; input[name=&quot;password&quot;]</td>
+	<td>password1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick=&quot;updateUserPw('/geonetwork/srv/eng/password.change.submit')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must contain one upper case, one lower case and one numeric character.</td>
+	<td></td>
+</tr>
+<!-- Contains repeated characters -->
+<tr>
+	<td>type</td>
+	<td>css=td.padded &gt; input[name=&quot;password&quot;]</td>
+	<td>Paaasword1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick=&quot;updateUserPw('/geonetwork/srv/eng/password.change.submit')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain repeated characters</td>
+	<td></td>
+</tr>
+<!-- Contain sequences -->
+<tr>
+	<td>type</td>
+	<td>css=td.padded &gt; input[name=&quot;password&quot;]</td>
+	<td>Password1abc</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick=&quot;updateUserPw('/geonetwork/srv/eng/password.change.submit')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Your password must not contain sequences such as 123, abc</td>
+	<td></td>
+</tr>
+<!-- Just right but must enter it twice (confirm that default validation is
+     being done) -->
+<tr>
+	<td>type</td>
+	<td>css=td.padded &gt; input[name=&quot;password&quot;]</td>
+    <td>${test_password}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@onclick=&quot;updateUserPw('/geonetwork/srv/eng/password.change.submit')&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>Please enter your password twice.</td>
+	<td></td>
+</tr>
+<!-- Enter password twice and move on (will fail as the user is not a
+     RegisteredUser and we've used a hardcoded key but that's fine as we are
+     only testing that the form is submitted -->
+<tr>
+	<td>type</td>
+	<td>name=password2</td>
+    <td>${test_password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@onclick=&quot;updateUserPw('/geonetwork/srv/eng/password.change.submit')&quot;]</td>
+	<td></td>
+</tr>
+<!-- TEARDOWN -->
+<tr>
+	<td>open</td>
+	<td>/geonetwork/srv/eng/main.home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<!-- Login as admin -->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[type=&quot;submit&quot;]</td>
+	<td></td>
+</tr>
+<!-- Delete test user -->
+<tr>
+	<td>open</td>
+	<td>/geonetwork/srv/eng/user.list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>chooseOkOnNextConfirmation</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+    <td>//td[text()='${test_username}']/following::button[text()='Delete'][1]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
