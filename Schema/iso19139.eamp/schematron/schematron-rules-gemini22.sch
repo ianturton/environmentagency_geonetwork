@@ -608,7 +608,8 @@
         </sch:rule>
     </sch:pattern>
 
-    <sch:pattern>
+    <!-- Commented out for EAMP to allow use of nonGeographicDataset
+        <sch:pattern>
         <sch:title>Resource type</sch:title>
         <sch:rule context="/*[1]">
             <sch:assert test="count(gmd:hierarchyLevel) = 1">Resource type is mandatory. One shall be provided.</sch:assert>
@@ -616,7 +617,7 @@
                               gmd:hierarchyLevel[1]/*[1]/@codeListValue = 'series' or
                               gmd:hierarchyLevel[1]/*[1]/@codeListValue = 'service'">Value of resource type shall be 'dataset', 'series' or 'service'.</sch:assert>
         </sch:rule>
-    </sch:pattern>
+    </sch:pattern> -->
 
     <sch:pattern>
         <sch:title>Gemini2-mi39-CodeList</sch:title>
