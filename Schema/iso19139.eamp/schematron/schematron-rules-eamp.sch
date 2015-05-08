@@ -90,5 +90,6 @@
                 gmd:hierarchyLevel[1]/*[1]/@codeListValue = 'nonGeographicDataset' or
                 gmd:hierarchyLevel[1]/*[1]/@codeListValue = 'service'">Value of resource type shall be 'dataset', 'series', 'nonGeographicDataset' or 'service'.</sch:assert>
         </sch:rule>
+    </sch:pattern>
 
 </sch:schema>
