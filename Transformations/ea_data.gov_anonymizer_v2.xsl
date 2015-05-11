@@ -196,27 +196,21 @@
 			<xsl:apply-templates select="node()"/>
 		</xsl:element>
 	</xsl:template>	
+
+		<xsl:template match="/*">
+     <gmd:MD_Metadata xmlns:gml="http://www.opengis.net/gml/3.2">
+       <xsl:copy-of select="@*"/>
+       <xsl:apply-templates/>
+     </gmd:MD_Metadata>
+ </xsl:template>
 	
 	<!-- copy All -->
-	<xsl:template match="gmd:MD_Metadata" priority="100">
-    <gmd:MD_Metadata>
-      <xsl:apply-templates select="node()" />
-    </gmd:MD_Metadata>
-  </xsl:template> 
-
-  
+	<xsl:template match="@* | node()">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()"/>
+		</xsl:copy>
+	</xsl:template>
 
 
-  
-  <xsl:template match="*" priority="0">
-    <xsl:element name="{name()}">
-      <xsl:for-each select="@*">
-        <xsl:attribute name="{name()}">
-          <xsl:value-of select="." />
-        </xsl:attribute>
-      </xsl:for-each> 
-      <xsl:apply-templates select="node()" />
-    </xsl:element>
-  </xsl:template>
 	
 </xsl:stylesheet>
