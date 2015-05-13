@@ -75,7 +75,7 @@
 	form
 	-->
 	<xsl:template name="form">
-		<form name="changepwdform" accept-charset="UTF-8" action="{/root/gui/locService}/password.change.submit" method="post">
+		<form autocomplete="off" name="changepwdform" accept-charset="UTF-8" action="{/root/gui/locService}/password.change.submit" method="post">
             <!-- <h1>XSL: password-change.xsl</h1> -->
 			<input type="hidden" name="username" size="-1" value="{/root/request/username}"/>
 			<input type="hidden" name="changeKey" size="-1" value="{/root/request/changeKey}"/>
@@ -86,11 +86,11 @@
 				</tr>
 				<tr>
 			  	<th class="padded"><xsl:value-of select="/root/gui/strings/password"/></th>
-					<td class="padded"><input class="content" type="password" name="password"/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="password"/></td>
 				</tr>
 				<tr>
 				  <th class="padded"><xsl:value-of select="/root/gui/strings/confirmPassword"/></th>
-					<td class="padded"><input class="content" type="password" name="password2"/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="password2"/></td>
 				</tr>
 			</table>
 		</form>
