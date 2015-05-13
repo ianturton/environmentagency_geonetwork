@@ -73,7 +73,7 @@
 	form
 	-->
 	<xsl:template name="form">
-		<form name="userupdateform" accept-charset="UTF-8" action="{/root/gui/locService}/user.update" method="post">
+		<form autocomplete="off" name="userupdateform" accept-charset="UTF-8" action="{/root/gui/locService}/user.update" method="post">
             <!-- <h1>XSL: user-resetpw.xsl</h1> -->
 			<input type="hidden" name="id" value="{/root/response/record/id}"/>
 			<input type="hidden" name="operation" value="resetpw"/>
@@ -89,11 +89,11 @@
 				</tr>
 				<tr>
 			  	<th class="padded"><xsl:value-of select="/root/gui/strings/password"/></th>
-					<td class="padded"><input class="content" type="password" name="password"/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="password"/></td>
 				</tr>
 				<tr>
 				  <th class="padded"><xsl:value-of select="/root/gui/strings/confirmPassword"/></th>
-					<td class="padded"><input class="content" type="password" name="password2"/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="password2"/></td>
 				</tr>
 
 				<!-- Add groups -->				
