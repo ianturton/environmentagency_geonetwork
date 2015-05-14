@@ -82,21 +82,21 @@
 	form
 	-->
 	<xsl:template name="form">
-		<form name="userupdateform" accept-charset="UTF-8" action="{/root/gui/locService}/user.pwupdate" method="post">
+		<form autocomplete="off" name="userupdateform" accept-charset="UTF-8" action="{/root/gui/locService}/user.pwupdate" method="post">
 			<!-- <h1>XSL: user-pwupdate.xsl</h1> -->
 			<input type="submit" style="display: none;" />
 			<table>
 				<tr>
 					<th class="padded"><xsl:value-of select="/root/gui/strings/password"/></th>
-					<td class="padded"><input class="content" type="password" name="password"/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="password"/></td>
 				</tr>
 				<tr>
 					<th class="padded"><xsl:value-of select="/root/gui/strings/newPassword"/></th>
-					<td class="padded"><input class="content" type="password" name="newPassword"/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="newPassword"/></td>
 				</tr>
 				<tr>
 					<th class="padded"><xsl:value-of select="/root/gui/strings/confirmNewPassword"/></th>
-					<td class="padded"><input class="content" type="password" name="newPassword2"/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="newPassword2"/></td>
 				</tr>
 			</table>
 		</form>
