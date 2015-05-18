@@ -17,7 +17,7 @@
 
                 xmlns:geonet="http://www.fao.org/geonetwork"
 
-				xmlns:gml="http://www.opengis.net/gml"
+				xmlns:gml="http://www.opengis.net/gml/3.2"
 
                 exclude-result-prefixes="geonet dc dct ows srv">
 
