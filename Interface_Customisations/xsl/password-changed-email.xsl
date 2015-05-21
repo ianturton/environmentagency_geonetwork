@@ -34,7 +34,7 @@
     		<to><xsl:value-of select="root/record/email"/></to>
 			<content>Your <xsl:value-of select="root/site"/> password has been changed.
 			
-If you did not change this password contact the <xsl:value-of select="root/site"/> <a><xsl:attribute name="href">mailto:<xsl:value-of select="root/adminEmail" /></xsl:attribute> helpdesk</a>
+If you did not change this password contact the <xsl:value-of select="root/site"/> helpdesk at metadata@environment-agency.gov.uk.
 
 The <xsl:value-of select="root/site"/> team
 			</content>
