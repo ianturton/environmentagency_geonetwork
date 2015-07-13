@@ -2,7 +2,7 @@
     <properties>
         <db.user>redacted</db.user> <!-- your database user -->
         <db.pass>redacted</db.pass> <!-- your database password -->
-        <db.dbname>jdbc:postgresql://host:5432/geonetwork</db.dbname> <!-- your database host, port and name -->
+        <db.dbname>jdbc:postgresql_postGIS://host:5432/database</db.dbname> <!-- your database host, port and name -->
     </properties>
     <file name=".*/WEB-INF/config.xml">
         <addXML xpath="appHandler"><param name="geonetwork.dir" value="/geonetwork/data_live" /></addXML> <!-- your external data directory -->
@@ -17,6 +17,7 @@
                         <url>${db.dbname}</url>
                         <poolSize>10</poolSize>
                         <validationQuery>SELECT 1</validationQuery>
+			<provideDataStore>true</provideDataStore>
                     </config>
                 </resource>
             </replaceXML>
