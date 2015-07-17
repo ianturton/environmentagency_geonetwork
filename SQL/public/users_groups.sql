@@ -8,7 +8,7 @@ CREATE OR REPLACE VIEW users_groups AS
  SELECT a.username, a.surname, a.name as firstname, c.name as group 
  from users a join usergroups b on a.id=b.userid 
  join groups c on b.groupid = c.id 
- order by a.surname, a.name, c.name
+ order by a.surname, a.name, c.name;
 
 ALTER TABLE users_groups
   OWNER TO geonetwork;
