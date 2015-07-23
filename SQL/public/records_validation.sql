@@ -21,3 +21,16 @@ CREATE OR REPLACE VIEW records_validation AS
 
 ALTER TABLE records_validation
   OWNER TO geonetwork;
+COMMENT ON VIEW records_validation
+  IS 'View includes all records approved and not validated/failed validation, showing:
+- ID
+- Status
+- Date last changed
+- Change message
+- Validation type
+- Validation status
+- Validation failed indicator
+- Validation date
+- ORL
+- Title';
+

@@ -13,3 +13,9 @@ CREATE OR REPLACE VIEW records_deleted AS
 
 ALTER TABLE records_deleted
   OWNER TO geonetwork;
+COMMENT ON VIEW records_deleted
+  IS 'View includes all records deleted in past week, showing:
+- ID
+- Title
+- Group';
+
