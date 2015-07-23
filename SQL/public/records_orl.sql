@@ -10,3 +10,8 @@ CREATE OR REPLACE VIEW records_orl AS
 
 ALTER TABLE records_orl
   OWNER TO geonetwork;
+COMMENT ON VIEW records_orl
+  IS 'View includes all records,  showing:
+- ID
+- ORL
+- Title';

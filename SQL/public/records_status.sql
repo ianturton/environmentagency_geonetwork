@@ -17,3 +17,12 @@ CREATE OR REPLACE VIEW records_status AS
 
 ALTER TABLE records_status
   OWNER TO geonetwork;
+COMMENT ON VIEW records_status
+  IS 'View includes all records,  showing:
+- ID
+- Current status (or blank)
+- Date last changed
+- Change message
+- ORL
+- Title';
+
