@@ -196,6 +196,19 @@
 			<xsl:apply-templates select="node()"/>
 		</xsl:element>
 	</xsl:template>	
+
+	<xsl:template match="/*">
+	     <gmd:MD_Metadata xmlns:gml="http://www.opengis.net/gml/3.2">
+	       <xsl:copy-of select="@*"/>
+	       <xsl:apply-templates/>
+	     </gmd:MD_Metadata>
+	</xsl:template>
+
+	<xsl:template match="gml:*">
+     <xsl:element name='gml:{local-name()}' namespace='http://www.opengis.net/gml/3.2'>
+      <xsl:apply-templates select="node()|@*"/>
+    </xsl:element>
+  </xsl:template>
 	
 	<!-- copy All -->
 	<xsl:template match="@* | node()">
@@ -203,5 +216,9 @@
 			<xsl:apply-templates select="@* | node()"/>
 		</xsl:copy>
 	</xsl:template>
+
+
+
+
 	
 </xsl:stylesheet>

@@ -19,7 +19,7 @@
 				</script>
 			</xsl:when>
 			<xsl:otherwise>
-	<form name="login" action="{/root/gui/url}/j_spring_security_check"
+	<form autocomplete="off" name="login" action="{/root/gui/url}/j_spring_security_check"
 		method="post">
 		<xsl:call-template name="formLayout">
 			<xsl:with-param name="title" select="/root/gui/info/heading" />
@@ -52,7 +52,7 @@
 						<td>
 							<h1><xsl:value-of select="/root/gui/strings/username" /></h1>
 							</td><td>
-							<input class="banner" type="text" id="username" name="username"
+							<input autocomplete="off" class="banner" type="text" id="username" name="username"
 								size="10" onkeypress="return entSub('login')" />
 						</td>
 					</tr>
@@ -60,7 +60,7 @@
 						<td>
 							<h1><xsl:value-of select="/root/gui/strings/password" /></h1>
 							</td><td>
-							<input class="banner" type="password" id="password" name="password"
+							<input autocomplete="off" class="banner" type="password" id="password" name="password"
 								size="10" onkeypress="return entSub('login')" />
 						</td>
 					</tr>
@@ -70,7 +70,7 @@
 					<button class="banner" onclick="goSubmit('login')">
 						<xsl:value-of select="/root/gui/strings/login" />
 					</button>
-					<p style="text-align: left">If you are unable to login you're account may be locked to force you to change your password via the <a onclick="doBannerButton('/geonetwork/srv/eng/password.forgotten.form','','1',300)" href="javascript:void(0);">Forgot your password?</a> function.</p>
+					<p style="text-align: left">If you are unable to login, your account may be locked. Please contact the <a><xsl:attribute name="href">mailto:metadata@environment-agency.gov.uk</xsl:attribute><xsl:value-of select="root/site"/> helpdesk at metadata@environment-agency.gov.uk</a>.</p>
 				</xsl:with-param>
 		</xsl:call-template>
 

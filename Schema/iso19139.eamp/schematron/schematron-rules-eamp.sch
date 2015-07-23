@@ -80,5 +80,16 @@
             <sch:assert test="count(//gmd:pointOfContact/gmd:CI_ResponsibleParty/gmd:role/gmd:CI_RoleCode[@codeListValue='pointOfContact'])=1">$loc/strings/EAMP300.alert.poc</sch:assert>
          </sch:rule>
      </sch:pattern>
+    
+    <sch:pattern>
+        <sch:title>EAMP-mi5-Resourcetype</sch:title>
+        <sch:rule context="/*[1]">
+            <sch:assert test="count(gmd:hierarchyLevel) = 1">Resource type is mandatory. One shall be provided.</sch:assert>
+            <sch:assert test="gmd:hierarchyLevel[1]/*[1]/@codeListValue = 'dataset' or
+                gmd:hierarchyLevel[1]/*[1]/@codeListValue = 'series' or
+                gmd:hierarchyLevel[1]/*[1]/@codeListValue = 'nonGeographicDataset' or
+                gmd:hierarchyLevel[1]/*[1]/@codeListValue = 'service'">Value of resource type shall be 'dataset', 'series', 'nonGeographicDataset' or 'service'.</sch:assert>
+        </sch:rule>
+    </sch:pattern>
 
 </sch:schema>

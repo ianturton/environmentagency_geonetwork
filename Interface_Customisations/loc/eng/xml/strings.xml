@@ -404,7 +404,7 @@
 	<completeTabEditor>Advanced editor</completeTabEditor>
 	<confirmCancel>Are you sure you want to leave the editor? (You will lose any unsaved changes)</confirmCancel>
 	<confirmCancelCreate>Are you sure you want to cancel creating this metadata?</confirmCancelCreate>
-	<confirmDelete>Are you sure you want to permanently delete this metadata record? It is Environment Agency retention policy not to delete records, but to retire them. If this is a new record you have created and you want to start again, you may delete. If this is an existing metadata record please contact the Metadata Team for assistance.</confirmDelete>
+	<confirmDelete>ARE YOU SURE YOU WANT TO PERMANENTLY DELETE THIS METADATA RECORD?\nIt is Environment Agency retention policy not to delete records, but to retire them.\nIf this is a new record you have created and you want to start again, you may delete.\nIf this is an existing metadata record please contact the Metadata Team for assistance.</confirmDelete>
 	<confirmBatchDelete>Are you sure you want to delete all $1 selected metadata from the database?</confirmBatchDelete>
 	<confirmNewPassword>Confirm new password</confirmNewPassword>
 	<confirmPassword>Confirm password</confirmPassword>
@@ -551,7 +551,7 @@
 	<insertMode>Insert mode:</insertMode>
 	<insertPasteMode>Copy/Paste</insertPasteMode>
 	<interactiveMap>Interactive Map</interactiveMap>
-	<interMapInfo><h1>Info in interactive maps</h1><p>You can find interactive maps by searching in GeoNetwork for digital data with an interactive map, or directly connet to a pre-configured map server. </p><p> Supported map servers are <a href="http://www.opengeospatial.org" class="sm" target="_blank">Open GeoSpatial® Consortium</a> compliant WMS Map Servers and <a href="http://www.esri.com" class="sm" target="_blank">ESRI® ArcIMS</a>.</p></interMapInfo>
+	<interMapInfo><h1>Info in interactive maps</h1><p>You can find interactive maps by searching in GeoNetwork for digital data with an interactive map, or directly connect to a pre-configured map server. </p><p> Supported map servers are <a href="http://www.opengeospatial.org" class="sm" target="_blank">Open GeoSpatial® Consortium</a> compliant WMS Map Servers and <a href="http://www.esri.com" class="sm" target="_blank">ESRI® ArcIMS</a>.</p></interMapInfo>
 	<intermapSearch>Geographic search</intermapSearch>
 	<isoAll>ISO All</isoAll>
 	<isoCore>ISO Core</isoCore>

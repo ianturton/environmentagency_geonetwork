@@ -241,7 +241,7 @@
 						<a href="javascript:injectServiceResponse('stat.tableExport?tableToExport=params', 'stat.tableExportDiv')">
                             <xsl:value-of select="/root/gui/strings/stat.exportParams"/></a>&#160;
 			    <br/>
-						<a href="javascript:injectServiceResponse('stat.tableExport?tableToExport=users', 'stat.tableExportDiv')">
+						<a href="javascript:injectServiceResponse('stat.tableExport?tableToExport=users_groups', 'stat.tableExportDiv')">
 					Users (all)</a>&#160;
 
                             <br/>
@@ -260,6 +260,13 @@
 			  <br/>
 						<a href="javascript:injectServiceResponse('stat.tableExport?tableToExport=records_validation','stat.tableExportDiv')">
 					Records by Validation (published but not validated)</a>&#160;
+			 <br/>	
+						<a href="javascript:injectServiceResponse('stat.tableExport?tableToExport=records_deleted','stat.tableExportDiv')">
+					Records Deleted in past week</a>&#160;
+			<br/>	
+						<a href="javascript:injectServiceResponse('stat.tableExport?tableToExport=opendata_validation','stat.tableExportDiv')">
+					data.gov.uk records validation checklist</a>&#160;
+
 					</td>
 				</tr>
 				<tr><td class="spacer"/></tr>

@@ -102,21 +102,21 @@
 	form
 	-->
 	<xsl:template name="form">
-		<form name="userupdateform" accept-charset="UTF-8" action="{/root/gui/locService}/user.update?operation=newuser" method="post">
+		<form autocomplete="off" name="userupdateform" accept-charset="UTF-8" action="{/root/gui/locService}/user.update?operation=newuser" method="post">
             <!-- <h1>XSL: user-new.xsl</h1> -->
 			<input type="hidden" name="id" value="{/root/response/record/id}"/>
 			<table class="text-aligned-left">
 				<tr>
 					<th class="padded"><xsl:value-of select="/root/gui/strings/username"/> (*)</th>
-					<td class="padded"><input class="content" type="text" name="username" value="{/root/response/record/username}"/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="text" name="username" value="{/root/response/record/username}"/></td>
 				</tr>
 				<tr>
 					<th class="padded"><xsl:value-of select="/root/gui/strings/password"/> (*)</th>
-					<td class="padded"><input class="content" type="password" name="password" value=""/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="password" value=""/></td>
 				</tr>
 				<tr>
 					<th class="padded"><xsl:value-of select="/root/gui/strings/confirmPassword"/> (*)</th>
-					<td class="padded"><input class="content" type="password" name="password2" value=""/></td>
+					<td class="padded"><input autocomplete="off" class="content" type="password" name="password2" value=""/></td>
 				</tr>
 				<xsl:call-template name="userinfofields"/>
 			</table>

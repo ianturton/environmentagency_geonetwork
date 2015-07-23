@@ -1594,6 +1594,12 @@
 		</entry>
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<entry>
+			<code>otherInformationResources</code>
+			<label>Other Information Resources</label>
+			<description>Topic not covered by any of the other categories</description>
+		</entry>
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+		<entry>
 			<code>biota</code>
 			<label>Biota</label>
 			<description>Flora and/or fauna in natural environment. Examples: wildlife, vegetation,
