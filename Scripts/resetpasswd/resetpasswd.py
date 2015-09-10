@@ -24,7 +24,7 @@ def parse_config(conf_file, db_xpath):
 
 
 def build_conn_args(url, db_user, db_pass):
-    url = urlparse(':'.join(url.split(':')[1:]))
+    url = urlparse(':'.join(url.split(':')[2:]))
     host, port = url.netloc.split(':')
     return {
         'database': url.path[1:],
