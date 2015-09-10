@@ -14,3 +14,11 @@ CREATE OR REPLACE VIEW records_date_updated AS
 
 ALTER TABLE records_date_updated
   OWNER TO geonetwork;
+COMMENT ON VIEW records_date_updated
+  IS 'View includes all records with no update in past three months, showing:
+- ID
+- Date last changed
+- Custodian 1
+- Title
+- Group
+';

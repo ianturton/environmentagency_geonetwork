@@ -47,12 +47,13 @@
 				<xsl:if test="not(/root/request/modal)">
 					<xsl:apply-templates mode="loading" select="/"/>
 				</xsl:if>
-				 <!-- testing modaldialog
-                                <script type="text/javascript" src="/geonetwork/scripts/modaldialog.js"></script>
-                                <script type="text/javascript">
-                                        modalDialog.showDialog('content_container', 500, '/geonetwork/scripts/splash.htm');
-                                </script>
-				-->
+
+				<!-- testing modaldialog -->
+				<script type="text/javascript" src="/geonetwork/scripts/modaldialog.js"></script>    
+				<script type="text/javascript">
+					modalDialog.setiFrameStyling("width:500px;height:250px");  				
+					modalDialog.showDialog('content_container', 500, '/geonetwork/scripts/splash.htm');
+				</script>
 			</body>
 		</html>
 	</xsl:template>

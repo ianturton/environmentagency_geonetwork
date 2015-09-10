@@ -13,3 +13,10 @@ CREATE OR REPLACE VIEW records_custodian AS
 
 ALTER TABLE records_custodian
   OWNER TO geonetwork;
+COMMENT ON VIEW records_custodian
+  IS 'View includes all records showing:
+- Custodian 1
+- Custodian 2
+- Title
+- Rating
+';

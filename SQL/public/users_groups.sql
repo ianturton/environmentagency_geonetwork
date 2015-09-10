@@ -12,3 +12,9 @@ CREATE OR REPLACE VIEW users_groups AS
 
 ALTER TABLE users_groups
   OWNER TO geonetwork;
+COMMENT ON VIEW users_groups
+  IS 'View includes all users, showing:
+- Username
+- Surname
+- First name
+- Group';

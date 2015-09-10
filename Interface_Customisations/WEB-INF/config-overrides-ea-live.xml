@@ -6,6 +6,7 @@
     </properties>
     <file name=".*/WEB-INF/config.xml">
         <addXML xpath="appHandler"><param name="geonetwork.dir" value="/geonetwork/data_live" /></addXML> <!-- your external data directory -->
+	<addXML xpath="appHandler"><param name="useHtml5ui" value="false" /></addXML>
             <replaceXML xpath="resources">
                 <resource enabled="true">
                     <name>main-db</name>
