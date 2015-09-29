@@ -27,7 +27,7 @@
 	<replaceXML xpath="languages">
 		<eng />
 	</replaceXML>
-	<replaceXML xpath="proj">
+	<replaceXML xpath="map/proj">
 		<crs code="EPSG:4326" default="1" edit="1"/><!-- WGS84 is mandatory because ISO store it by default in LatLong-->
 		<crs code="EPSG:27700" edit="1" def="+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs "/>
 	</replaceXML>
