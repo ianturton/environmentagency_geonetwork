@@ -86,9 +86,10 @@
 
     <!-- ================================================================= -->
 	<!-- GEMINI Profile DateStamp: only gco:date allowed-->
+	<!-- Changed to dateTime to keep data.gov.uk happy-->
 
 	<xsl:template match="gmd:dateStamp">
-		<xsl:choose>
+		<!--<xsl:choose>
 			<xsl:when test="/root/env/changeDate">
 				<xsl:copy>
 					<gco:Date>
@@ -99,7 +100,18 @@
 			<xsl:otherwise>
 				<xsl:copy-of select="."/>
 			</xsl:otherwise>
+		</xsl:choose> -->
+		<xsl:choose>
+			<xsl:when test="/root/env/changeDate">
+				<xsl:copy>
+					<gco:DateTime><xsl:value-of select="/root/env/changeDate"/></gco:DateTime>
+				</xsl:copy>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:copy-of select="."/>
+			</xsl:otherwise>
 		</xsl:choose>
+	</xsl:template>
 	</xsl:template>
 
     <!-- ================================================================= -->
