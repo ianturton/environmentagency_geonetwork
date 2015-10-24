@@ -268,12 +268,12 @@
 			<xs:enumeration value="inlandWaters"/>
 			<xs:enumeration value="location"/>
 			<xs:enumeration value="oceans"/>
-			<xs:enumeration value="otherInformationResources"/>
 			<xs:enumeration value="planningCadastre"/>
 			<xs:enumeration value="society"/>
 			<xs:enumeration value="structure"/>
 			<xs:enumeration value="transportation"/>
 			<xs:enumeration value="utilitiesCommunication"/>
+			<!--<xs:enumeration value="otherInformationResources"/> -->
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- ........................................................................ -->

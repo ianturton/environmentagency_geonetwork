@@ -1593,11 +1593,11 @@
 				livestock</description>
 		</entry>
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
-		<entry>
+		<!--<entry>
 			<code>otherInformationResources</code>
 			<label>Other Information Resources</label>
 			<description>Topic not covered by any of the other categories</description>
-		</entry>
+		</entry> -->
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<entry>
 			<code>biota</code>
