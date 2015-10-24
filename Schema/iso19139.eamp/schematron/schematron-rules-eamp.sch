@@ -9,7 +9,7 @@
     <sch:ns prefix="gmd" uri="http://www.isotc211.org/2005/gmd"/>
     <sch:ns prefix="srv" uri="http://www.isotc211.org/2005/srv"/>
     <sch:ns prefix="gco" uri="http://www.isotc211.org/2005/gco"/>
-    <sch:ns prefix="eamp" uri="http://environment.data.gov.EAMP/eamp"/>
+    <sch:ns prefix="eamp" uri="http://environment.data.gov.uk/eamp"/>
     <sch:ns prefix="geonet" uri="http://www.fao.org/geonetwork"/>
     <sch:ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>
 
@@ -39,22 +39,22 @@
     <sch:pattern>
         <sch:title>AfANumber</sch:title>
     </sch:pattern>
-
+    
     <sch:pattern>
         <sch:title>EAMP-mi2-AfANumber</sch:title>
         <sch:rule context="//*[eamp:EA_Afa]">
             <sch:assert test="((//eamp:EA_AfaStatus = 'Not AfA (To be Assessed with Guidance)' or
-            //eamp:EA_AfaStatus = 'AfA (Publication Scheme and Information for Re-Use Register)' or
-            //eamp:EA_AfaStatus = 'AfA (Public Register)' or
-            //eamp:EA_AfaStatus = 'AfA (Publication Scheme)' or
-            //eamp:EA_AfaStatus = 'AfA (Information Requests only)') and
-            string-length(//*[eamp:afaNumber]//gco:Decimal)!=0) or ((
-            //eamp:EA_AfaStatus = 'Not AfA (To be Assessed)' or 
-            //eamp:EA_AfaStatus = 'Not Applicable - third party dataset') 
-            and string-length(//*[eamp:afaNumber]//gco:Decimal)=0)">$loc/strings/EAMP200.alert.number</sch:assert>
-    </sch:rule>
+                //eamp:EA_AfaStatus = 'AfA (Publication Scheme and Information for Re-Use Register)' or
+                //eamp:EA_AfaStatus = 'AfA (Public Register)' or
+                //eamp:EA_AfaStatus = 'AfA (Publication Scheme)' or
+                //eamp:EA_AfaStatus = 'AfA (Information Requests only)') and
+                string-length(//*[eamp:afaNumber]//gco:Decimal)!=0) or ((
+                //eamp:EA_AfaStatus = 'Not AfA (To be Assessed)' or 
+                //eamp:EA_AfaStatus = 'Not Applicable - third party dataset') or 
+                //eamp:EA_AfaStatus = 'Open Data Risk Assessment'
+                and string-length(//*[eamp:afaNumber]//gco:Decimal)=0)">$loc/strings/EAMP200.alert.number</sch:assert>
+        </sch:rule>
     </sch:pattern>
-    
  
     <!-- POINT OF CONTACT -->
 

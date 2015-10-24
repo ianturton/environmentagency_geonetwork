@@ -2035,9 +2035,19 @@
 	<!--=== AfA Code for EA ===-->
 	<codelist name="eamp:EA_AfAStatus_Type">
 			<entry>
-					<code>afaInformationRequestsOnly</code>
-					<label>AfA (Information Requests only)</label>
-					<description>Approved for reactive requests for information only. Not for licensing pro-active use or publication scheme.</description>
+					<code>openDataRiskAssessment</code>
+					<label>Open Data Risk Assessment</label>
+					<description>Legal checks for low risk datasets.</description>
+			</entry>
+			<entry>
+					<code>notAfaToBeAssessed</code>
+					<label>Not AfA (To be Assessed)</label>
+					<description>The information should be assessed at the time of the request and is the default category within Metadata Explorer. The data has not been assessed via the AfA process.</description>
+			</entry>
+			<entry>
+					<code>notAfaToBeAssessedWithGuidance</code>
+					<label>Not AfA (To be Assessed with Guidance)</label>
+					<description>The information should be assessed at the time of the request and includes guidance relevant to the dataset. The data has been assessed via the AfA process.</description>
 			</entry>
 			<entry>
 					<code>afaPubSchemeAndInfoForReuseReg</code>
@@ -2055,14 +2065,9 @@
 					<description>Approved for inclusion on the Publication Scheme. Not available for Re-Use.</description>
 			</entry>
 			<entry>
-					<code>notAfaToBeAssessedWithGuidance</code>
-					<label>Not AfA (To be Assessed with Guidance)</label>
-					<description>The information should be assessed at the time of the request and includes guidance relevant to the dataset. The data has been assessed via the AfA process.</description>
-			</entry>
-			<entry>
-					<code>notAfaToBeAssessed</code>
-					<label>Not AfA (To be Assessed)</label>
-					<description>The information should be assessed at the time of the request and is the default category within Metadata Explorer. The data has not been assessed via the AfA process.</description>
+					<code>afaInformationRequestsOnly</code>
+					<label>AfA (Information Requests only)</label>
+					<description>Approved for reactive requests for information only. Not for licensing pro-active use or publication scheme.</description>
 			</entry>
 			<entry>
 					<code>notApplicableThirdpartyDataset</code>
